@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="">
 	<head>
-		<title>Grandtechcloud Technical Blog</title>
+		<title>
+	CICD相關服務介紹
+</title>
 		<style>
 	body {
 		display: block;
@@ -24,8 +26,19 @@
 
 
 	
+	
+	
 	<meta name="author" content="GCSSRE Team" />
-	<meta name="description" content="" />
+	<meta name="description" content="CI/CD能夠大幅增加軟體開發的效率以及穩定度, 可以使用的解決方案也很多, 這邊列出一些常見的以及用途範圍。 程式碼版控:  AWS Code Commit AWS原生的版控系統, 可以與Git無痛接軌
+ Github 最大的程式碼存放網站, 目前免費版的專案也可以開無限個private儲存庫, 唯有一些功能需要付費。
+ Bitbucket 另外一個使用Git的雲端儲存庫, 也可以開無限的private儲存庫。
+ Gitlab, Gitea 可以讓用戶自己架設在地端
+  CI:  AWS CodeBuild 適用於CodeCommit, S3, Github, Bitbucket, 可使用linux/windows配合不同docker image編譯
+ Jenkins CI 老牌的開源工具, 讓用戶安裝在地端進行CICD, 本身具跨平台優勢, 也可以用多主機架構來分配工作進行持續交付, 適合公司想搭建內部CICD伺服器使用。
+ Travis CI 僅適用於Github, 但使用者數量多, 使用上也較穩定, 不過C# .net方面由於是在linux上編譯, 可能會有問題 免費版可以對public的儲存庫無限使用, private則每個帳號有100次試用。
+ Appveyor 有多個Source來源可以選擇 對windows的編譯支援度較高, 價格上也比Travis CI略便宜
+ Circle CI 可使用於Github, Bitbucket 免費版有提供private儲存庫的支援, 採每月次數限制的
+ Drone.io 支援GitHub, GitHubEnterprise, Bitbucket, GitLab, 可以架設在地端" />
 
 
 
@@ -35,8 +48,6 @@
 <link rel="shortcut icon" href="/img/defaultFav.ico">
 
 
-
-    <link rel="alternate" type="application/rss+xml" href="https://grandtechcloud.github.io/index.xml" title="Grandtechcloud Technical Blog" />
 
 
 		
@@ -173,16 +184,16 @@ var bodyBgSwitchIndex = 0;
 	
 		
 			
-			<a class="ui label olive " href="/tags/cicd" title="cicd">cicd</a>
+			<a class="ui label pink " href="/tags/cicd" title="cicd">cicd</a>
 		
 			
-			<a class="ui label red " href="/tags/aws" title="aws">aws</a>
+			<a class="ui label yellow " href="/tags/aws" title="aws">aws</a>
 		
 			
-			<a class="ui label violet " href="/tags/codebuild" title="codebuild">codebuild</a>
+			<a class="ui label red " href="/tags/codebuild" title="codebuild">codebuild</a>
 		
 			
-			<a class="ui label pink " href="/tags/%E5%B7%A5%E5%85%B7" title="工具">工具</a>
+			<a class="ui label brown " href="/tags/%E5%B7%A5%E5%85%B7" title="工具">工具</a>
 		
 	
 
@@ -267,9 +278,6 @@ var bodyBgSwitchIndex = 0;
 			<div class="flipper">
 				<div class="front">
 					
-	
-	
-	
 	<nav class="ui top secondary menu bar">
 	
 	<div class="item">
@@ -278,14 +286,14 @@ var bodyBgSwitchIndex = 0;
 
 	
 	
-
-	
-	
 		<div class="item">
-			<a href="/posts">
-				<i class="inverted big link archive icon" title="Archive"></i>
+			<a href="/">
+				<i class="inverted big link home icon" title="Home"></i>
 			</a>
 		</div>
+	
+
+	
 	
 
 	
@@ -308,16 +316,14 @@ var bodyBgSwitchIndex = 0;
 
 	
 	
-		
-		<div class="item">
-			
-			</div>
-		<div class="item">
-			
-		</div>
-	
 
 	
+	
+		<div class="ui container tablet computer only grid">
+			<div class="item" onClick="$('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');">
+				<i class="inverted big link sidebar icon" title="Show Sidebar"></i>
+			</div>
+		</div>
 	
 
 	
@@ -333,8 +339,8 @@ var bodyBgSwitchIndex = 0;
 
 	<div class="ui centered grid">
 		
-		<div class="fifteen wide mobile fifteen wide tablet four wide computer column">
-			<div class="ui inverted accordion">
+		<div class="sixteen wide mobile only column">
+				<div class="ui inverted accordion">
 	<div id="header" class="ui inverted segment column box">		
 		
 		<header id="author" class="ui top attached center aligned inverted segment">
@@ -354,16 +360,16 @@ var bodyBgSwitchIndex = 0;
 		</header>
 
 		
-		<div class="active title header-title">
+		<div class=" title header-title">
 			
 				<div id="tag-category-pop" class="ui red right corner label">
-					<i class="hand point icon up" title="Show/hide tags and categories"></i>
+					<i class="hand point icon down" title="Show/hide tags and categories"></i>
 				</div>
 			
 		</div>
 		
 		
-		<div id="tag-category" class="active content">
+		<div id="tag-category" class=" content">
 			
 				<section class="ui attached center aligned inverted segment dream-tags none flexbox">
 					
@@ -380,13 +386,13 @@ var bodyBgSwitchIndex = 0;
 			<a class="ui label blue " href="/tags/cicd" title="cicd">cicd</a>
 		
 			
-			<a class="ui label orange " href="/tags/aws" title="aws">aws</a>
+			<a class="ui label red " href="/tags/aws" title="aws">aws</a>
 		
 			
-			<a class="ui label orange " href="/tags/codebuild" title="codebuild">codebuild</a>
+			<a class="ui label brown " href="/tags/codebuild" title="codebuild">codebuild</a>
 		
 			
-			<a class="ui label yellow " href="/tags/%E5%B7%A5%E5%85%B7" title="工具">工具</a>
+			<a class="ui label olive " href="/tags/%E5%B7%A5%E5%85%B7" title="工具">工具</a>
 		
 	
 
@@ -469,155 +475,197 @@ var bodyBgSwitchIndex = 0;
 
 		</div>
 
-		
-		<div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list">
-			<div class="cards row box">
+		<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
+			
+			<section class="ui secondary top attached black segment post-head">
+				<h1 class="post-title">
+					CICD相關服務介紹
+				</h1>
+
+				<div class="sub header">
+					<div><span><i class="calendar outline icon"></i>Apr 3, 2019</span></div>
+					
+					<div><span class="disqusComment"><i class="comment outline icon"></i><a href="https://grandtechcloud.github.io/posts/cicd%E7%9B%B8%E9%97%9C%E6%9C%8D%E5%8B%99%E4%BB%8B%E7%B4%B9/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="857647dae9b94511ee7789b3ea6a4d7f"></a></span></div>
+					<div><span><i class="clock outline icon"></i>1 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on Apr 3, 2019</span></div>
+				</div>
+				<hr>
+
+				
+					<div class="toc">
+						<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#ci-cd能夠大幅增加軟體開發的效率以及穩定度-可以使用的解決方案也很多-這邊列出一些常見的以及用途範圍">CI/CD能夠大幅增加軟體開發的效率以及穩定度, 可以使用的解決方案也很多, 這邊列出一些常見的以及用途範圍。</a>
+<ul>
+<li><a href="#程式碼版控">程式碼版控:</a></li>
+<li><a href="#ci">CI:</a></li>
+<li><a href="#cd">CD:</a></li>
+<li><a href="#整合服務">整合服務:</a></li>
+<li><a href="#可以透過類似下面的方式來組合">可以透過類似下面的方式來組合:</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+					</div>
+				
+
+				<article class="post-content twemoji">
+					
+
+<h4 id="ci-cd能夠大幅增加軟體開發的效率以及穩定度-可以使用的解決方案也很多-這邊列出一些常見的以及用途範圍">CI/CD能夠大幅增加軟體開發的效率以及穩定度, 可以使用的解決方案也很多, 這邊列出一些常見的以及用途範圍。&nbsp;<a class="anchor" href="#ci-cd能夠大幅增加軟體開發的效率以及穩定度-可以使用的解決方案也很多-這邊列出一些常見的以及用途範圍"><i class="small linkify icon"></i></a> </h4>
+
+<h5 id="程式碼版控">程式碼版控:&nbsp;<a class="anchor" href="#程式碼版控"><i class="small linkify icon"></i></a> </h5>
+
+<ul>
+<li><p>AWS Code Commit
+AWS原生的版控系統, 可以與Git無痛接軌</p></li>
+
+<li><p>Github
+最大的程式碼存放網站, 目前免費版的專案也可以開無限個private儲存庫, 唯有一些功能需要付費。</p></li>
+
+<li><p>Bitbucket
+另外一個使用Git的雲端儲存庫, 也可以開無限的private儲存庫。</p></li>
+
+<li><p>Gitlab, Gitea
+可以讓用戶自己架設在地端</p></li>
+</ul>
+
+<h5 id="ci">CI:&nbsp;<a class="anchor" href="#ci"><i class="small linkify icon"></i></a> </h5>
+
+<ul>
+<li><p>AWS CodeBuild
+適用於CodeCommit, S3, Github, Bitbucket, 可使用linux/windows配合不同docker image編譯</p></li>
+
+<li><p>Jenkins CI
+老牌的開源工具, 讓用戶安裝在地端進行CICD, 本身具跨平台優勢, 也可以用多主機架構來分配工作進行持續交付, 適合公司想搭建內部CICD伺服器使用。</p></li>
+
+<li><p>Travis CI
+僅適用於Github, 但使用者數量多, 使用上也較穩定, 不過C# .net方面由於是在linux上編譯, 可能會有問題
+免費版可以對public的儲存庫無限使用, private則每個帳號有100次試用。</p></li>
+
+<li><p>Appveyor
+有多個Source來源可以選擇
+對windows的編譯支援度較高, 價格上也比Travis CI略便宜</p></li>
+
+<li><p>Circle CI
+可使用於Github, Bitbucket
+免費版有提供private儲存庫的支援, 採每月次數限制的</p></li>
+
+<li><p>Drone.io
+支援GitHub, GitHubEnterprise, Bitbucket, GitLab, 可以架設在地端</p></li>
+</ul>
+
+<h5 id="cd">CD:&nbsp;<a class="anchor" href="#cd"><i class="small linkify icon"></i></a> </h5>
+
+<ul>
+<li>AWS CodeDeploy
+透過S3抓取部署包, 可以設定部署方式(直接替換, 藍綠部署), 以及部署過程中流量分配方式。
+各CI平台可以透過Plugin放置部署包, 呼叫CodeDeploy進行部署</li>
+</ul>
+
+<h5 id="整合服務">整合服務:&nbsp;<a class="anchor" href="#整合服務"><i class="small linkify icon"></i></a> </h5>
+
+<ul>
+<li>AWS CodePipeline
+可以透過原始碼來源(CodeCommit, S3, Github, Bitbucket)變更時候, 觸發AWS CodeBuild, CodeDeploy 完成整個伺服器的部署更新。</li>
+</ul>
+
+<h5 id="可以透過類似下面的方式來組合">可以透過類似下面的方式來組合:&nbsp;<a class="anchor" href="#可以透過類似下面的方式來組合"><i class="small linkify icon"></i></a> </h5>
+
+<p><img src="https://github.com/grandtechcloud/Pics/blob/master/images/CICDPic.png?raw=true" alt="" /></p>
+
+				</article>				
+			</section>
+
+			
+			<section class="ui secondary attached segment dream-tags">
 				
 					
 
 
-	
-	
-		
-	
 
 
-
-<article class="blog-card none flexbox">
 	
-	<img class="image" src="/img/default4.jpg"></img>
-	<div class="title-content twemoji">
-		<h3><a class="title" href=https://grandtechcloud.github.io/posts/k6-io-%E5%A3%93%E6%B8%AC%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%B4%B9/>K6.io-壓測工具介紹</a></h3>
-		<div class="intro twemoji">
-			
-				<br><br>
-			
-		</div>
-	</div>
-
+		<a class="ui label orange " href="/tags/cicd" title="CICD">CICD</a>
 	
-	<div class="utility-info">
-		<ul class="utility-list">
-			
-				<div><i class="comment icon"></i><span class="disqus-comment-count" data-disqus-identifier="34385b96aa9d1c3eb47f8501fe6f16b8"></span></div>
-			
-			<div><span><i class="calendar icon"></i>Apr 3, 2019</span></div>
-			<div><span><i class="clock icon"></i>1 min read</span></div>
-		</ul>
-	</div>
-	<div class="color-overlay"></div>
-</article>
+
 
 				
+			</section>
+
+			
+			
+				<section class="ui secondary  attached segment share row box">
 					
 
 
-	
-	
-		
-	
 
 
 
-<article class="blog-card none flexbox">
+
+
+
+<div class="author">
 	
-	<img class="image" src="/img/default4.jpg"></img>
-	<div class="title-content twemoji">
-		<h3><a class="title" href=https://grandtechcloud.github.io/posts/cicd%E7%9B%B8%E9%97%9C%E6%9C%8D%E5%8B%99%E4%BB%8B%E7%B4%B9/>CICD相關服務介紹</a></h3>
-		<div class="intro twemoji">
-			
-				<br><br>
-			
-		</div>
+	<img class="avatar" src="https://github.com/grandtechcloud/Pics/blob/master/images/avatar.png?raw=true">
+	
+</div>
+<div class="info grow flexbox">
+	
+	<p class="name">GCSSRE Team</p>
+	
+	<p class="desc">If you can DREAM it, You can DO it!</p>
+</div>
+
+
+<section class="buttons row box">
+	<div class="facebook none flexbox" href="#" onclick="window.open(
+			'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+			'facebook-share-dialog',
+			'width=626,height=436'); return false;">
+		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
 	</div>
-
-	
-	<div class="utility-info">
-		<ul class="utility-list">
-			
-				<div><i class="comment icon"></i><span class="disqus-comment-count" data-disqus-identifier="857647dae9b94511ee7789b3ea6a4d7f"></span></div>
-			
-			<div><span><i class="calendar icon"></i>Apr 3, 2019</span></div>
-			<div><span><i class="clock icon"></i>1 min read</span></div>
-		</ul>
+	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;CICD相關服務介紹  https:\/\/grandtechcloud.github.io\/posts\/cicd%E7%9B%B8%E9%97%9C%E6%9C%8D%E5%8B%99%E4%BB%8B%E7%B4%B9\/','_self')">
+		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
 	</div>
-	<div class="color-overlay"></div>
-</article>
+</section>
 
-				
+				</section>
+			
+
+			
+			
+			
+
+			
+			
+				<div class="ui secondary bottom attached stacked segment disqus">
 					
+<div id="disqus_thread"></div>
+<script>
+	var disqus_config = function () {
+		this.page.url = 'https:\/\/grandtechcloud.github.io\/posts\/cicd%E7%9B%B8%E9%97%9C%E6%9C%8D%E5%8B%99%E4%BB%8B%E7%B4%B9\/';
+		this.page.identifier = '857647dae9b94511ee7789b3ea6a4d7f';
+	};
+	(function() {
+   	var d = document, s = d.createElement('script');
+   	s.src = 'https://' + 'gcs-sre' + '.disqus.com/embed.js';
+   	s.setAttribute('data-timestamp', +new Date());
+   	(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-
-	
-	
-		
-	
-
-
-
-<article class="blog-card none flexbox">
-	
-	<img class="image" src="/img/default1.jpg"></img>
-	<div class="title-content twemoji">
-		<h3><a class="title" href=https://grandtechcloud.github.io/posts/aws-codebuild-%E5%BB%BA%E7%AB%8Bwindows%E4%B8%BB%E6%A9%9F%E7%9A%84dockerimage/>AWS CodeBuild - 建立Windows主機的DockerImage</a></h3>
-		<div class="intro twemoji">
+				</div>
 			
-				<br><br>
-			
-		</div>
-	</div>
-
-	
-	<div class="utility-info">
-		<ul class="utility-list">
-			
-				<div><i class="comment icon"></i><span class="disqus-comment-count" data-disqus-identifier="0ac3b14ad83764464d5564158f1bb14f"></span></div>
-			
-			<div><span><i class="calendar icon"></i>Apr 3, 2019</span></div>
-			<div><span><i class="clock icon"></i>2 min read</span></div>
-		</ul>
-	</div>
-	<div class="color-overlay"></div>
-</article>
-
-				
-					
-
-
-	
-	
-		
-	
-
-
-
-<article class="blog-card none flexbox">
-	
-	<img class="image" src="/img/default2.jpg"></img>
-	<div class="title-content twemoji">
-		<h3><a class="title" href=https://grandtechcloud.github.io/posts/dotnet-ci-cd-%E5%B0%88%E6%A1%88%E7%84%A1%E6%B3%95%E7%B7%A8%E8%AD%AF%E8%99%95%E7%90%86/>DotNet CI/CD 專案無法編譯處理</a></h3>
-		<div class="intro twemoji">
-			
-				<br><br>
-			
-		</div>
-	</div>
-
-	
-	<div class="utility-info">
-		<ul class="utility-list">
-			
-				<div><i class="comment icon"></i><span class="disqus-comment-count" data-disqus-identifier="a3fbb41de9638a1a57386b0134842f60"></span></div>
-			
-			<div><span><i class="calendar icon"></i>Apr 3, 2019</span></div>
-			<div><span><i class="clock icon"></i>1 min read</span></div>
-		</ul>
-	</div>
-	<div class="color-overlay"></div>
-</article>
-
-				
-			</div>
 		</div>
 	</div>
 
@@ -718,9 +766,7 @@ var bodyBgSwitchIndex = 0;
 		
 	
 	
-		
-			<script id="dsq-count-scr" src="//gcs-sre.disqus.com/count.js" async></script>
-		
+		<script id="dsq-count-scr" src="//gcs-sre.disqus.com/count.js" async></script>
 	
 
 		

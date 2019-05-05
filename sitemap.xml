@@ -3,33 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/basics/</loc>
+    <loc>https://zealot0515.github.io/basics/</loc>
     <lastmod>2019-05-05T22:05:08+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/basics/second-content/</loc>
+    <loc>https://zealot0515.github.io/basics/second-content/</loc>
     <lastmod>2019-05-05T22:12:13+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/basics/first-content/</loc>
+    <loc>https://zealot0515.github.io/basics/first-content/</loc>
     <lastmod>2019-05-05T14:11:47+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://zealot0515.github.io/</loc>
     <lastmod>2019-05-05T14:11:47+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://zealot0515.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://zealot0515.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   

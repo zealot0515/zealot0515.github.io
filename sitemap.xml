@@ -3,34 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://zealot0515.github.io/blogpages/111/</loc>
-  </url>
-  
-  <url>
-    <loc>http://zealot0515.github.io/blogpages/pagitestpage/</loc>
-  </url>
-  
-  <url>
-    <loc>http://zealot0515.github.io/about/</loc>
-  </url>
-  
-  <url>
-    <loc>http://zealot0515.github.io/blogpages/</loc>
+    <loc>http://www.example.com/authors/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://zealot0515.github.io/</loc>
+    <loc>http://www.example.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://zealot0515.github.io/tags/</loc>
+    <loc>http://www.example.com/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://zealot0515.github.io/topics/</loc>
+    <loc>http://www.example.com/series/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/tags/</loc>
     <priority>0</priority>
   </url>
   

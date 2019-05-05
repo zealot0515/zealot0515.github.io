@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Grandtechcloud Technical Blog</title>
-    <link>https://grandtechcloud.github.io/tags/</link>
-    <description>Recent content in Tags on Grandtechcloud Technical Blog</description>
+    <title>Tags on Pagi&#39;s Blog</title>
+    <link>https://zealot0515.github.io/tags/</link>
+    <description>Recent content in Tags on Pagi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 03 Apr 2019 14:50:34 +0000</lastBuildDate>
     
-	<atom:link href="https://grandtechcloud.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zealot0515.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>工具</title>
-      <link>https://grandtechcloud.github.io/tags/%E5%B7%A5%E5%85%B7/</link>
+      <link>https://zealot0515.github.io/tags/%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Wed, 03 Apr 2019 14:50:34 +0000</pubDate>
       
-      <guid>https://grandtechcloud.github.io/tags/%E5%B7%A5%E5%85%B7/</guid>
+      <guid>https://zealot0515.github.io/tags/%E5%B7%A5%E5%85%B7/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CICD</title>
-      <link>https://grandtechcloud.github.io/tags/cicd/</link>
+      <link>https://zealot0515.github.io/tags/cicd/</link>
       <pubDate>Wed, 03 Apr 2019 14:11:36 +0000</pubDate>
       
-      <guid>https://grandtechcloud.github.io/tags/cicd/</guid>
+      <guid>https://zealot0515.github.io/tags/cicd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AWS</title>
-      <link>https://grandtechcloud.github.io/tags/aws/</link>
+      <link>https://zealot0515.github.io/tags/aws/</link>
       <pubDate>Wed, 03 Apr 2019 01:50:52 +0000</pubDate>
       
-      <guid>https://grandtechcloud.github.io/tags/aws/</guid>
+      <guid>https://zealot0515.github.io/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CodeBuild</title>
-      <link>https://grandtechcloud.github.io/tags/codebuild/</link>
+      <link>https://zealot0515.github.io/tags/codebuild/</link>
       <pubDate>Wed, 03 Apr 2019 01:50:52 +0000</pubDate>
       
-      <guid>https://grandtechcloud.github.io/tags/codebuild/</guid>
+      <guid>https://zealot0515.github.io/tags/codebuild/</guid>
       <description></description>
     </item>
     

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>介紹 on Grandtechcloud Technical Blog</title>
-    <link>https://grandtechcloud.github.io/categories/%E4%BB%8B%E7%B4%B9/</link>
-    <description>Recent content in 介紹 on Grandtechcloud Technical Blog</description>
+    <title>介紹 on Pagi&#39;s Blog</title>
+    <link>https://zealot0515.github.io/categories/%E4%BB%8B%E7%B4%B9/</link>
+    <description>Recent content in 介紹 on Pagi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 03 Apr 2019 14:11:36 +0000</lastBuildDate>
     
-	<atom:link href="https://grandtechcloud.github.io/categories/%E4%BB%8B%E7%B4%B9/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zealot0515.github.io/categories/%E4%BB%8B%E7%B4%B9/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CICD相關服務介紹</title>
-      <link>https://grandtechcloud.github.io/posts/cicd%E7%9B%B8%E9%97%9C%E6%9C%8D%E5%8B%99%E4%BB%8B%E7%B4%B9/</link>
+      <link>https://zealot0515.github.io/posts/cicd%E7%9B%B8%E9%97%9C%E6%9C%8D%E5%8B%99%E4%BB%8B%E7%B4%B9/</link>
       <pubDate>Wed, 03 Apr 2019 14:11:36 +0000</pubDate>
       
-      <guid>https://grandtechcloud.github.io/posts/cicd%E7%9B%B8%E9%97%9C%E6%9C%8D%E5%8B%99%E4%BB%8B%E7%B4%B9/</guid>
+      <guid>https://zealot0515.github.io/posts/cicd%E7%9B%B8%E9%97%9C%E6%9C%8D%E5%8B%99%E4%BB%8B%E7%B4%B9/</guid>
       <description>CI/CD能夠大幅增加軟體開發的效率以及穩定度, 可以使用的解決方案也很多, 這邊列出一些常見的以及用途範圍。 程式碼版控:  AWS Code Commit AWS原生的版控系統, 可以與Git無痛接軌
  Github 最大的程式碼存放網站, 目前免費版的專案也可以開無限個private儲存庫, 唯有一些功能需要付費。
  Bitbucket 另外一個使用Git的雲端儲存庫, 也可以開無限的private儲存庫。

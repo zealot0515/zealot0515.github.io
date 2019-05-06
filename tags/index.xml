@@ -5,10 +5,28 @@
     <link>https://zealot0515.github.io/tags/</link>
     <description>Recent content in Tags on Pagi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 03 Apr 2019 14:50:34 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 May 2019 16:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zealot0515.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>NAT</title>
+      <link>https://zealot0515.github.io/tags/nat/</link>
+      <pubDate>Sun, 05 May 2019 16:00:00 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/tags/nat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vpc</title>
+      <link>https://zealot0515.github.io/tags/vpc/</link>
+      <pubDate>Sun, 05 May 2019 16:00:00 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/tags/vpc/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>工具</title>

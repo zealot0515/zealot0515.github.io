@@ -2,7 +2,7 @@
 <html lang="">
 	<head>
 		<title>
-	AWS CodeBuild - 建立Windows主機的DockerImage
+	Private Subnet怎麼存取外網資訊？ AWS Vpc NAT Gateway
 </title>
 		<style>
 	body {
@@ -29,10 +29,8 @@
 	
 	
 	<meta name="author" content="Pagi" />
-	<meta name="description" content="如果想用AWS CodeBuild Windows Server 建置 .Net, 或者一些C# Framework, 有時候會遇到使用原生的無法正常編譯的問題, 這邊就要自己建立合適環境的Docker Image.
-Instructions 環境建置： 使用一台主機或者虛擬機或者直接 Launch一台EC2 (Windows Sever 2016 with Containers) 至少給60GB空間 建議是t2. Medium以上的機器, build image效率會較好 以下是直接透過EC2進行的步驟 啟動完成後透過遠端桌面連入
- 運行命令管理員(cmd.exe) 建立build Image的工作目錄：  mkdir C:\BuildTools cd C:\BuildTools  建立C:\BuildTools\Dockerfile:
-  # escape=` FROM microsoft/dotnet-framework:4.7.2-runtime SHELL [&amp;quot;powershell&amp;quot;, &amp;quot;-Command&amp;quot;, &amp;quot;$ErrorActionPreference = &#39;Stop&#39;; $ProgressPreference = &#39;SilentlyContinue&#39;;&amp;quot;] #Install NuGet CLI ENV NUGET_VERSION 4.4.1 RUN New-Item -Type Directory $Env:ProgramFiles\NuGet; ` Invoke-WebRequest -UseBasicParsing https://dist.nuget.org/win-x86-commandline/v$Env:NUGET_VERSION/nuget.exe -OutFile $Env:ProgramFiles\NuGet\nuget.exe # Install VS Test Agent RUN Invoke-WebRequest -UseBasicParsing https://download." />
+	<meta name="description" content="當Vpc中有Private Subnet時候, 又希望在Private Subnet的機器能存取網路（下載更新, 資料), 就可以透過在public subnet建立NAT Gatway並連結到Private Subnet的方式, 讓其中的機器能夠存取網路。
+但 NAT Gateway費用上, 即便不使用也有低消, 大量使用流量費用頗高, 要注意！" />
 
 
 
@@ -178,22 +176,22 @@ var bodyBgSwitchIndex = 0;
 	
 		
 			
-			<a class="ui label pink " href="/tags/cicd" title="cicd">cicd</a>
+			<a class="ui label olive " href="/tags/cicd" title="cicd">cicd</a>
 		
 			
-			<a class="ui label olive " href="/tags/aws" title="aws">aws</a>
+			<a class="ui label teal " href="/tags/aws" title="aws">aws</a>
 		
 			
-			<a class="ui label blue " href="/tags/codebuild" title="codebuild">codebuild</a>
+			<a class="ui label brown " href="/tags/codebuild" title="codebuild">codebuild</a>
 		
 			
-			<a class="ui label orange " href="/tags/nat" title="nat">nat</a>
+			<a class="ui label purple " href="/tags/nat" title="nat">nat</a>
 		
 			
-			<a class="ui label brown " href="/tags/vpc" title="vpc">vpc</a>
+			<a class="ui label blue " href="/tags/vpc" title="vpc">vpc</a>
 		
 			
-			<a class="ui label purple " href="/tags/%E5%B7%A5%E5%85%B7" title="工具">工具</a>
+			<a class="ui label violet " href="/tags/%E5%B7%A5%E5%85%B7" title="工具">工具</a>
 		
 	
 
@@ -390,22 +388,22 @@ var bodyBgSwitchIndex = 0;
 	
 		
 			
-			<a class="ui label teal " href="/tags/cicd" title="cicd">cicd</a>
+			<a class="ui label yellow " href="/tags/cicd" title="cicd">cicd</a>
 		
 			
-			<a class="ui label pink " href="/tags/aws" title="aws">aws</a>
+			<a class="ui label brown " href="/tags/aws" title="aws">aws</a>
 		
 			
-			<a class="ui label olive " href="/tags/codebuild" title="codebuild">codebuild</a>
+			<a class="ui label brown " href="/tags/codebuild" title="codebuild">codebuild</a>
 		
 			
 			<a class="ui label pink " href="/tags/nat" title="nat">nat</a>
 		
 			
-			<a class="ui label yellow " href="/tags/vpc" title="vpc">vpc</a>
+			<a class="ui label violet " href="/tags/vpc" title="vpc">vpc</a>
 		
 			
-			<a class="ui label teal " href="/tags/%E5%B7%A5%E5%85%B7" title="工具">工具</a>
+			<a class="ui label brown " href="/tags/%E5%B7%A5%E5%85%B7" title="工具">工具</a>
 		
 	
 
@@ -499,104 +497,26 @@ var bodyBgSwitchIndex = 0;
 			
 			<section class="ui secondary top attached black segment post-head">
 				<h1 class="post-title">
-					AWS CodeBuild - 建立Windows主機的DockerImage
+					Private Subnet怎麼存取外網資訊？ AWS Vpc NAT Gateway
 				</h1>
 
 				<div class="sub header">
-					<div><span><i class="calendar outline icon"></i>Apr 3, 2019</span></div>
+					<div><span><i class="calendar outline icon"></i>May 5, 2019</span></div>
 					
-					<div><span class="disqusComment"><i class="comment outline icon"></i><a href="https://zealot0515.github.io/posts/aws-codebuild-%E5%BB%BA%E7%AB%8Bwindows%E4%B8%BB%E6%A9%9F%E7%9A%84dockerimage/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="0ac3b14ad83764464d5564158f1bb14f"></a></span></div>
-					<div><span><i class="clock outline icon"></i>2 min read</span></div>
-					<div><span><i class="angle double up icon"></i>Last updated on Apr 3, 2019</span></div>
+					<div><span class="disqusComment"><i class="comment outline icon"></i><a href="https://zealot0515.github.io/posts/private-subnet%E6%80%8E%E9%BA%BC%E5%AD%98%E5%8F%96%E5%A4%96%E7%B6%B2%E8%B3%87%E8%A8%8A-aws-vpc-nat-gateway/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="51151bf1ade82c41ffe3d8c7e56af75b"></a></span></div>
+					<div><span><i class="clock outline icon"></i>1 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on May 5, 2019</span></div>
 				</div>
 				<hr>
 
 				
 
 				<article class="post-content twemoji">
-					<p>如果想用AWS CodeBuild Windows Server 建置 .Net, 或者一些C# Framework, 有時候會遇到使用原生的無法正常編譯的問題, 這邊就要自己建立合適環境的Docker Image.</p>
+					<p>當Vpc中有Private Subnet時候, 又希望在Private Subnet的機器能存取網路（下載更新, 資料), 就可以透過在public subnet建立NAT Gatway並連結到Private Subnet的方式, 讓其中的機器能夠存取網路。</p>
 
-<p>Instructions
-環境建置：
-使用一台主機或者虛擬機或者直接
-Launch一台EC2 (Windows Sever 2016 with Containers)
-至少給60GB空間
-建議是t2. Medium以上的機器, build image效率會較好
-以下是直接透過EC2進行的步驟
-啟動完成後透過遠端桌面連入</p>
+<p>但 NAT Gateway費用上, 即便不使用也有低消, 大量使用流量費用頗高, 要注意！</p>
 
-<ul>
-<li>運行命令管理員(cmd.exe)</li>
-<li>建立build Image的工作目錄：
-<code>
-mkdir C:\BuildTools
-cd C:\BuildTools
-</code></li>
-<li>建立C:\BuildTools\Dockerfile:<br /></li>
-</ul>
-
-<pre><code># escape=`
-
-FROM microsoft/dotnet-framework:4.7.2-runtime
-
-SHELL [&quot;powershell&quot;, &quot;-Command&quot;, &quot;$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';&quot;]
-
-#Install NuGet CLI
-ENV NUGET_VERSION 4.4.1
-RUN New-Item -Type Directory $Env:ProgramFiles\NuGet; `
-    Invoke-WebRequest -UseBasicParsing https://dist.nuget.org/win-x86-commandline/v$Env:NUGET_VERSION/nuget.exe -OutFile $Env:ProgramFiles\NuGet\nuget.exe
-
-# Install VS Test Agent
-RUN Invoke-WebRequest -UseBasicParsing https://download.visualstudio.microsoft.com/download/pr/12210068/8a386d27295953ee79281fd1f1832e2d/vs_TestAgent.exe -OutFile vs_TestAgent.exe; `
-    Start-Process vs_TestAgent.exe -ArgumentList '--quiet', '--norestart', '--nocache' -NoNewWindow -Wait; `
-    Remove-Item -Force vs_TestAgent.exe; `
-# Install VS Build Tools
-    Invoke-WebRequest -UseBasicParsing https://download.visualstudio.microsoft.com/download/pr/12210059/e64d79b40219aea618ce2fe10ebd5f0d/vs_BuildTools.exe -OutFile vs_BuildTools.exe; `
-    # Installer won't detect DOTNET_SKIP_FIRST_TIME_EXPERIENCE if ENV is used, must use setx /M
-    setx /M DOTNET_SKIP_FIRST_TIME_EXPERIENCE 1; `
-    Start-Process vs_BuildTools.exe -ArgumentList '--add', 'Microsoft.VisualStudio.Workload.MSBuildTools', '--add', 'Microsoft.VisualStudio.Workload.NetCoreBuildTools', '--add', 'Microsoft.VisualStudio.Workload.WebBuildTools;includeRecommended', '--quiet', '--norestart', '--nocache' -NoNewWindow -Wait; `
-    Remove-Item -Force vs_buildtools.exe; `
-    Remove-Item -Force -Recurse \&quot;${Env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\&quot;; `
-    Remove-Item -Force -Recurse ${Env:TEMP}\*; `
-    Remove-Item -Force -Recurse \&quot;${Env:ProgramData}\Package Cache\&quot;
-
-# Set PATH in one layer to keep image size down.
-RUN setx /M PATH $(${Env:PATH} `
-    + \&quot;;${Env:ProgramFiles}\NuGet\&quot; `
-    + \&quot;;${Env:ProgramFiles(x86)}\Microsoft Visual Studio\2017\TestAgent\Common7\IDE\CommonExtensions\Microsoft\TestWindow\&quot; `
-    + \&quot;;${Env:ProgramFiles(x86)}\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\&quot;)
-
-# Install Targeting Packs
-RUN @('4.0', '4.5.2', '4.6.2', '4.7.2') `
-    | %{ `
-        Invoke-WebRequest -UseBasicParsing https://dotnetbinaries.blob.core.windows.net/referenceassemblies/v${_}.zip -OutFile referenceassemblies.zip; `
-        Expand-Archive -Force referenceassemblies.zip -DestinationPath \&quot;${Env:ProgramFiles(x86)}\Reference Assemblies\Microsoft\Framework\.NETFramework\&quot;; `
-        Remove-Item -Force referenceassemblies.zip; `
-    }
-</code></pre>
-
-<ul>
-<li>執行build Image的指令
-<code>
-docker build -t buildtool:latest -m 3GB .
-</code></li>
-<li>等待運行完成後
-可以用下面的指令進入容器內測試
-<code>
-docker run -it buildtool
-</code></li>
-<li>測試ＯＫ後可以準備上傳到AWS ECR
-<code>
-aws ecr get-login --region region --no-include-email
-</code>
-*將輸出的登入資訊再貼一次登入docker
-登入docker後即可將剛剛的buildtool上傳到aws ecr
-<code>
-docker tag buildtool:latest #ACCOUNT_ID#.dkr.ecr.#REGION#.amazonaws.com/ buildtool:latest
-docker push #ACCOUNT_ID#.dkr.ecr.#REGION#.amazonaws.com/buildtool:latest
-</code></li>
-<li>上傳完成後即可在AWS ECR找到剛剛上傳的Image, 在CodeBuild的選項也就出現可以選擇</li>
-</ul>
+<p><img src="/uploads/NAT awsomeaddiction.jpg" alt="" /></p>
 
 				</article>				
 			</section>
@@ -610,11 +530,9 @@ docker push #ACCOUNT_ID#.dkr.ecr.#REGION#.amazonaws.com/buildtool:latest
 
 
 	
-		<a class="ui label teal " href="/tags/codebuild" title="CodeBuild">CodeBuild</a>
+		<a class="ui label green " href="/tags/nat" title="NAT">NAT</a>
 	
-		<a class="ui label orange " href="/tags/aws" title="AWS">AWS</a>
-	
-		<a class="ui label olive " href="/tags/cicd" title="CICD">CICD</a>
+		<a class="ui label teal " href="/tags/vpc" title="Vpc">Vpc</a>
 	
 
 
@@ -653,7 +571,7 @@ docker push #ACCOUNT_ID#.dkr.ecr.#REGION#.amazonaws.com/buildtool:latest
 			'width=626,height=436'); return false;">
 		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
 	</div>
-	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;AWS CodeBuild - 建立Windows主機的DockerImage  https:\/\/zealot0515.github.io\/posts\/aws-codebuild-%E5%BB%BA%E7%AB%8Bwindows%E4%B8%BB%E6%A9%9F%E7%9A%84dockerimage\/','_self')">
+	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;Private Subnet怎麼存取外網資訊？ AWS Vpc NAT Gateway  https:\/\/zealot0515.github.io\/posts\/private-subnet%E6%80%8E%E9%BA%BC%E5%AD%98%E5%8F%96%E5%A4%96%E7%B6%B2%E8%B3%87%E8%A8%8A-aws-vpc-nat-gateway\/','_self')">
 		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
 	</div>
 </section>
@@ -672,8 +590,8 @@ docker push #ACCOUNT_ID#.dkr.ecr.#REGION#.amazonaws.com/buildtool:latest
 <div id="disqus_thread"></div>
 <script>
 	var disqus_config = function () {
-		this.page.url = 'https:\/\/zealot0515.github.io\/posts\/aws-codebuild-%E5%BB%BA%E7%AB%8Bwindows%E4%B8%BB%E6%A9%9F%E7%9A%84dockerimage\/';
-		this.page.identifier = '0ac3b14ad83764464d5564158f1bb14f';
+		this.page.url = 'https:\/\/zealot0515.github.io\/posts\/private-subnet%E6%80%8E%E9%BA%BC%E5%AD%98%E5%8F%96%E5%A4%96%E7%B6%B2%E8%B3%87%E8%A8%8A-aws-vpc-nat-gateway\/';
+		this.page.identifier = '51151bf1ade82c41ffe3d8c7e56af75b';
 	};
 	(function() {
    	var d = document, s = d.createElement('script');

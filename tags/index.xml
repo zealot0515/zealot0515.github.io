@@ -5,10 +5,28 @@
     <link>https://zealot0515.github.io/tags/</link>
     <description>Recent content in Tags on Pagi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 05 May 2019 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 May 2019 16:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zealot0515.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>cloudwatch</title>
+      <link>https://zealot0515.github.io/tags/cloudwatch/</link>
+      <pubDate>Mon, 06 May 2019 16:00:00 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/tags/cloudwatch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>monitor</title>
+      <link>https://zealot0515.github.io/tags/monitor/</link>
+      <pubDate>Mon, 06 May 2019 16:00:00 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/tags/monitor/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>NAT</title>

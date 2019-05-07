@@ -2,7 +2,7 @@
 <html lang="">
 	<head>
 		<title>
-	K6.io-壓測工具介紹
+	Tag | monitor
 </title>
 		<style>
 	body {
@@ -26,14 +26,8 @@
 
 
 	
-	
-	
 	<meta name="author" content="Pagi" />
-	<meta name="description" content="有時候上線之前, 我們會希望伺服器是有經過壓力測試的, 而不是開放第一天被壓力測試, 這邊就需要準備一些工具來使用&amp;hellip;這邊就介紹一款K6.io, 是 https://www.loadimpact.com 底層使用的壓測工具。
-官方網站：https://k6.io/ 使用此工具很簡單, 指定人數/時間/腳本就可以運作 問題點會出在腳本怎麼撰寫 (另外人數與記憶體有關, 看開工具的機器而定)
-這邊講一個簡單的腳本寫法
- 建立一個test.js 輸入下面的內容 後存檔 ``` import http from &amp;ldquo;k6/http&amp;rdquo;; import { check } from &amp;ldquo;k6&amp;rdquo;;  export default function() { check(http.get(&amp;ldquo;www.targetweb.com&amp;rdquo;), { &amp;ldquo;status is 200&amp;rdquo;: &amp;reg; =&amp;gt; r.status == 200, }); }
-* 用以下指令運作工具  k6 &amp;ndash;vus=10 &amp;ndash;duration=300s test.js ``` * 就會用10個人持續連線網站300秒 * 最後統計出連線時間的數據 " />
+	<meta name="description" content="" />
 
 
 
@@ -43,6 +37,8 @@
 <link rel="shortcut icon" href="/img/defaultFav.ico">
 
 
+
+    <link rel="alternate" type="application/rss+xml" href="https://zealot0515.github.io/tags/monitor/index.xml" title="Pagi's Blog" />
 
 
 		
@@ -179,28 +175,28 @@ var bodyBgSwitchIndex = 0;
 	
 		
 			
-			<a class="ui label teal " href="/tags/cicd" title="cicd">cicd</a>
+			<a class="ui label olive " href="/tags/cicd" title="cicd">cicd</a>
 		
 			
-			<a class="ui label pink " href="/tags/aws" title="aws">aws</a>
+			<a class="ui label red " href="/tags/aws" title="aws">aws</a>
 		
 			
-			<a class="ui label pink " href="/tags/codebuild" title="codebuild">codebuild</a>
+			<a class="ui label red " href="/tags/codebuild" title="codebuild">codebuild</a>
 		
 			
 			<a class="ui label red " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
 		
 			
-			<a class="ui label red " href="/tags/monitor" title="monitor">monitor</a>
+			<a class="ui label violet " href="/tags/monitor" title="monitor">monitor</a>
 		
 			
-			<a class="ui label pink " href="/tags/nat" title="nat">nat</a>
+			<a class="ui label red " href="/tags/nat" title="nat">nat</a>
 		
 			
-			<a class="ui label purple " href="/tags/vpc" title="vpc">vpc</a>
+			<a class="ui label orange " href="/tags/vpc" title="vpc">vpc</a>
 		
 			
-			<a class="ui label green " href="/tags/%E5%B7%A5%E5%85%B7" title="工具">工具</a>
+			<a class="ui label olive " href="/tags/%E5%B7%A5%E5%85%B7" title="工具">工具</a>
 		
 	
 
@@ -299,6 +295,8 @@ var bodyBgSwitchIndex = 0;
 			<div class="flipper">
 				<div class="front">
 					
+	
+		
 	<nav class="ui top secondary menu bar">
 	
 	<div class="item">
@@ -316,14 +314,14 @@ var bodyBgSwitchIndex = 0;
 
 	
 	
-
-	
-	
 		<div class="item">
-			<a href="/tags">
-				<i class="inverted big link tags icon" title="All Tags"></i>
+			<a href="/posts">
+				<i class="inverted big link archive icon" title="Archive"></i>
 			</a>
 		</div>
+	
+
+	
 	
 
 	
@@ -340,12 +338,6 @@ var bodyBgSwitchIndex = 0;
 
 	
 	
-		<div class="ui container tablet computer only grid">
-			<div class="item" onClick="$('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');">
-				<i class="inverted big link sidebar icon" title="Show Sidebar"></i>
-			</div>
-		</div>
-	
 
 	
 	
@@ -357,11 +349,10 @@ var bodyBgSwitchIndex = 0;
 	
 </nav>
 
-
+	
 	<div class="ui centered grid">
-		
-		<div class="sixteen wide mobile only column">
-				<div class="ui inverted accordion">
+		<div class="fifteen wide mobile fifteen wide tablet four wide computer column">
+			<div class="ui inverted accordion">
 	<div id="header" class="ui inverted segment column box">		
 		
 		<header id="author" class="ui top attached center aligned inverted segment">
@@ -381,16 +372,16 @@ var bodyBgSwitchIndex = 0;
 		</header>
 
 		
-		<div class=" title header-title">
+		<div class="active title header-title">
 			
 				<div id="tag-category-pop" class="ui red right corner label">
-					<i class="hand point icon down" title="Show/hide tags and categories"></i>
+					<i class="hand point icon up" title="Show/hide tags and categories"></i>
 				</div>
 			
 		</div>
 		
 		
-		<div id="tag-category" class=" content">
+		<div id="tag-category" class="active content">
 			
 				<section class="ui attached center aligned inverted segment dream-tags none flexbox">
 					
@@ -404,28 +395,28 @@ var bodyBgSwitchIndex = 0;
 	
 		
 			
-			<a class="ui label green " href="/tags/cicd" title="cicd">cicd</a>
+			<a class="ui label red " href="/tags/cicd" title="cicd">cicd</a>
 		
 			
-			<a class="ui label yellow " href="/tags/aws" title="aws">aws</a>
+			<a class="ui label pink " href="/tags/aws" title="aws">aws</a>
 		
 			
-			<a class="ui label violet " href="/tags/codebuild" title="codebuild">codebuild</a>
+			<a class="ui label purple " href="/tags/codebuild" title="codebuild">codebuild</a>
 		
 			
-			<a class="ui label blue " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
+			<a class="ui label teal " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
 		
 			
 			<a class="ui label brown " href="/tags/monitor" title="monitor">monitor</a>
 		
 			
-			<a class="ui label purple " href="/tags/nat" title="nat">nat</a>
+			<a class="ui label orange " href="/tags/nat" title="nat">nat</a>
 		
 			
-			<a class="ui label pink " href="/tags/vpc" title="vpc">vpc</a>
+			<a class="ui label yellow " href="/tags/vpc" title="vpc">vpc</a>
 		
 			
-			<a class="ui label blue " href="/tags/%E5%B7%A5%E5%85%B7" title="工具">工具</a>
+			<a class="ui label violet " href="/tags/%E5%B7%A5%E5%85%B7" title="工具">工具</a>
 		
 	
 
@@ -521,144 +512,47 @@ var bodyBgSwitchIndex = 0;
 </div>
 
 		</div>
-
-		<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
-			
-			<section class="ui secondary top attached black segment post-head">
-				<h1 class="post-title">
-					K6.io-壓測工具介紹
-				</h1>
-
-				<div class="sub header">
-					<div><span><i class="calendar outline icon"></i>Apr 3, 2019</span></div>
-					
-					<div><span class="disqusComment"><i class="comment outline icon"></i><a href="https://zealot0515.github.io/posts/k6-io-%E5%A3%93%E6%B8%AC%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%B4%B9/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="34385b96aa9d1c3eb47f8501fe6f16b8"></a></span></div>
-					<div><span><i class="clock outline icon"></i>1 min read</span></div>
-					<div><span><i class="angle double up icon"></i>Last updated on Apr 3, 2019</span></div>
-				</div>
-				<hr>
-
-				
-
-				<article class="post-content twemoji">
-					<p>有時候上線之前, 我們會希望伺服器是有經過壓力測試的, 而不是開放第一天被壓力測試, 這邊就需要準備一些工具來使用&hellip;這邊就介紹一款K6.io, 是 <a href="https://www.loadimpact.com">https://www.loadimpact.com</a>  底層使用的壓測工具。</p>
-
-<p>官方網站：<a href="https://k6.io/">https://k6.io/</a>
-<img src="https://k6.io/wp-content/uploads/2017/04/d9a22e5-demo.gif" alt="" /></p>
-
-<p>使用此工具很簡單, 指定人數/時間/腳本就可以運作
-問題點會出在腳本怎麼撰寫
-(另外人數與記憶體有關, 看開工具的機器而定)</p>
-
-<p>這邊講一個簡單的腳本寫法</p>
-
-<ul>
-<li>建立一個test.js</li>
-<li>輸入下面的內容 後存檔
-```
-import http from &ldquo;k6/http&rdquo;;
-import { check } from &ldquo;k6&rdquo;;</li>
-</ul>
-
-<p>export default function() {
-  check(http.get(&ldquo;www.targetweb.com&rdquo;), {
-    &ldquo;status is 200&rdquo;: &reg; =&gt; r.status == 200,
-  });
-}</p>
-
-<pre><code>* 用以下指令運作工具
-</code></pre>
-
-<p>k6 &ndash;vus=10 &ndash;duration=300s test.js
-```
-* 就會用10個人持續連線網站300秒
-* 最後統計出連線時間的數據
-<img src="https://files.readme.io/b6eb148-Screen_Shot_2017-11-29_at_12.01.17.png" alt="" /></p>
-
-				</article>				
-			</section>
-
-			
-			<section class="ui secondary attached segment dream-tags">
+		
+		<div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list">
+			<div class="cards row box">
 				
 					
 
 
-
-
 	
-		<a class="ui label blue " href="/tags/%E5%B7%A5%E5%85%B7" title="工具">工具</a>
+	
+		
 	
 
 
-				
-			</section>
 
+<article class="blog-card none flexbox">
+	
+	<img class="image" src="/img/default6.jpg"></img>
+	<div class="title-content twemoji">
+		<h3><a class="title" href=https://zealot0515.github.io/posts/%E9%80%8F%E9%81%8E%E7%AC%AC%E4%B8%89%E6%96%B9monitor-aws%E6%9C%8D%E5%8B%99-site24x7/>透過第三方monitor aws服務 - site24x7</a></h3>
+		<div class="intro twemoji">
 			
+				<br><br>
 			
-				<section class="ui secondary  attached segment share row box">
-					
-
-
-
-
-
-
-
-
-<div class="author">
-	
-	<img class="avatar" src="/uploads/15740812_1539957876020597_216031373147234651_n.jpg">
-	
-</div>
-<div class="info grow flexbox">
-	
-	<p class="name">Pagi</p>
-	
-	<p class="desc">Kept Going...</p>
-</div>
-
-
-<section class="buttons row box">
-	<div class="facebook none flexbox" href="#" onclick="window.open(
-			'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
-			'facebook-share-dialog',
-			'width=626,height=436'); return false;">
-		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
+		</div>
 	</div>
-	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;K6.io-壓測工具介紹  https:\/\/zealot0515.github.io\/posts\/k6-io-%E5%A3%93%E6%B8%AC%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%B4%B9\/','_self')">
-		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
+
+	
+	<div class="utility-info">
+		<ul class="utility-list">
+			
+				<div><i class="comment icon"></i><span class="disqus-comment-count" data-disqus-identifier="c8dc589d447e0b742a19ae77bdf0cbc8"></span></div>
+			
+			<div><span><i class="calendar icon"></i>May 6, 2019</span></div>
+			<div><span><i class="clock icon"></i>1 min read</span></div>
+		</ul>
 	</div>
-</section>
+	<div class="color-overlay"></div>
+</article>
 
-				</section>
-			
-
-			
-			
-			
-
-			
-			
-				<div class="ui secondary bottom attached stacked segment disqus">
-					
-<div id="disqus_thread"></div>
-<script>
-	var disqus_config = function () {
-		this.page.url = 'https:\/\/zealot0515.github.io\/posts\/k6-io-%E5%A3%93%E6%B8%AC%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%B4%B9\/';
-		this.page.identifier = '34385b96aa9d1c3eb47f8501fe6f16b8';
-	};
-	(function() {
-   	var d = document, s = d.createElement('script');
-   	s.src = 'https://' + 'zealot0515' + '.disqus.com/embed.js';
-   	s.setAttribute('data-timestamp', +new Date());
-   	(d.head || d.body).appendChild(s);
-	})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-				</div>
-			
+				
+			</div>
 		</div>
 	</div>
 
@@ -775,7 +669,9 @@ import { check } from &ldquo;k6&rdquo;;</li>
 		
 	
 	
-		<script id="dsq-count-scr" src="//zealot0515.disqus.com/count.js" async></script>
+		
+			<script id="dsq-count-scr" src="//zealot0515.disqus.com/count.js" async></script>
+		
 	
 
 		

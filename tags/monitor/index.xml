@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>monitor on Pagi&#39;s Blog</title>
+    <link>https://zealot0515.github.io/tags/monitor/</link>
+    <description>Recent content in monitor on Pagi&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 06 May 2019 16:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zealot0515.github.io/tags/monitor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>透過第三方monitor aws服務 - site24x7</title>
+      <link>https://zealot0515.github.io/posts/%E9%80%8F%E9%81%8E%E7%AC%AC%E4%B8%89%E6%96%B9monitor-aws%E6%9C%8D%E5%8B%99-site24x7/</link>
+      <pubDate>Mon, 06 May 2019 16:00:00 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/posts/%E9%80%8F%E9%81%8E%E7%AC%AC%E4%B8%89%E6%96%B9monitor-aws%E6%9C%8D%E5%8B%99-site24x7/</guid>
+      <description>site24x7是一個paas的第三方監控服務, 透過授權第三方讀取cloudwatch資訊, 來monitor服務的狀況, 設定指標進行告警。
+不過這邊要注意, 是透過aws cloudwatch api查詢指標, 有額外的費用存在！</description>
+    </item>
+    
+  </channel>
+</rss>

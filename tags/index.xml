@@ -5,10 +5,28 @@
     <link>https://zealot0515.github.io/tags/</link>
     <description>Recent content in Tags on Pagi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 May 2019 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 May 2019 15:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zealot0515.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>IaC</title>
+      <link>https://zealot0515.github.io/tags/iac/</link>
+      <pubDate>Wed, 08 May 2019 15:00:00 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/tags/iac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Terraform</title>
+      <link>https://zealot0515.github.io/tags/terraform/</link>
+      <pubDate>Wed, 08 May 2019 15:00:00 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/tags/terraform/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>cloudwatch</title>

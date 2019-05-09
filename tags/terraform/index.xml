@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Terraform on Pagi&#39;s Blog</title>
+    <title>terraform on Pagi&#39;s Blog</title>
     <link>https://zealot0515.github.io/tags/terraform/</link>
-    <description>Recent content in Terraform on Pagi&#39;s Blog</description>
+    <description>Recent content in terraform on Pagi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 08 May 2019 15:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 May 2019 13:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zealot0515.github.io/tags/terraform/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Terraform IaC Tool </title>
+      <link>https://zealot0515.github.io/posts/terraform-iac-tool/</link>
+      <pubDate>Thu, 09 May 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/posts/terraform-iac-tool/</guid>
+      <description>Terraform是Hashicorp 公司出品的一個IaC工具,
+可以透過程式碼的方式來佈建 Aws的服務,
+同時可以在版本更新時候進行最小資源改動,
+配合版控更能在意外發生時後, 快速重建服務。
+Terraform類似於Aws Cloud Formation, 但不僅僅支援Aws,
+更支援其他的雲服務(GCP, Azure &amp;hellip;),
+相較學習Cloud Formation僅能用於Aws, 學習Terraform是個更好的選擇。
+這邊介紹一下Terraform的安裝, 參照官方的文件, 幾乎所有系統都能使用,
+在這文章中我是透過Ubuntu安裝。
+# 1. 先更新ubuntu套件庫 sudo apt-get update # 2. 安裝unzip sudo apt-get install unzip # 3. 取得terraform 安裝包 wget https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip # 4. 解開安裝包 unzip terraform_0.11.13_linux_amd64.zip # 5. 將執行檔放到 /usr/local/bin 底下方便後續使用 sudo mv terraform /usr/local/bin/  之後再補充一些IaC 的 寫法</description>
+    </item>
     
     <item>
       <title>Terraforming, 用terraform的方式列出aws資源</title>

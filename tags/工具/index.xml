@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工具 on Pagi&#39;s Blog</title>
+    <link>https://zealot0515.github.io/tags/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on Pagi&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 03 Apr 2019 14:50:34 +0000</lastBuildDate>
+    
+	<atom:link href="https://zealot0515.github.io/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>K6.io-壓測工具介紹</title>
+      <link>https://zealot0515.github.io/posts/k6-io-%E5%A3%93%E6%B8%AC%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%B4%B9/</link>
+      <pubDate>Wed, 03 Apr 2019 14:50:34 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/posts/k6-io-%E5%A3%93%E6%B8%AC%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%B4%B9/</guid>
+      <description>有時候上線之前, 我們會希望伺服器是有經過壓力測試的, 而不是開放第一天被壓力測試, 這邊就需要準備一些工具來使用&amp;hellip;這邊就介紹一款K6.io, 是 https://www.loadimpact.com 底層使用的壓測工具。
+官方網站：https://k6.io/ 使用此工具很簡單, 指定人數/時間/腳本就可以運作 問題點會出在腳本怎麼撰寫 (另外人數與記憶體有關, 看開工具的機器而定)
+這邊講一個簡單的腳本寫法
+ 建立一個test.js 輸入下面的內容 後存檔 ``` import http from &amp;ldquo;k6/http&amp;rdquo;; import { check } from &amp;ldquo;k6&amp;rdquo;;  export default function() { check(http.get(&amp;ldquo;www.targetweb.com&amp;rdquo;), { &amp;ldquo;status is 200&amp;rdquo;: &amp;reg; =&amp;gt; r.status == 200, }); }
+* 用以下指令運作工具  k6 &amp;ndash;vus=10 &amp;ndash;duration=300s test.js ``` * 就會用10個人持續連線網站300秒 * 最後統計出連線時間的數據 </description>
+    </item>
+    
+  </channel>
+</rss>

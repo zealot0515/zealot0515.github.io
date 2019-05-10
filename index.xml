@@ -1,126 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pagi&#39;s Blog</title>
-    <link>https://zealot0515.github.io/</link>
-    <description>Recent content on Pagi&#39;s Blog</description>
+    <title>My New Hugo Site</title>
+    <link>http://example.org/</link>
+    <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 09 May 2019 13:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
     
-	<atom:link href="https://zealot0515.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Terraform IaC Tool </title>
-      <link>https://zealot0515.github.io/posts/terraform-iac-tool/</link>
-      <pubDate>Thu, 09 May 2019 13:00:00 +0000</pubDate>
-      
-      <guid>https://zealot0515.github.io/posts/terraform-iac-tool/</guid>
-      <description>Terraform是Hashicorp 公司出品的一個IaC工具,
-可以透過程式碼的方式來佈建 Aws的服務,
-同時可以在版本更新時候進行最小資源改動,
-配合版控更能在意外發生時後, 快速重建服務。
-Terraform類似於Aws Cloud Formation, 但不僅僅支援Aws,
-更支援其他的雲服務(GCP, Azure &amp;hellip;),
-相較學習Cloud Formation僅能用於Aws, 學習Terraform是個更好的選擇。
-這邊介紹一下Terraform的安裝, 參照官方的文件, 幾乎所有系統都能使用,
-在這文章中我是透過Ubuntu安裝。
-# 1. 先更新ubuntu套件庫 sudo apt-get update # 2. 安裝unzip sudo apt-get install unzip # 3. 取得terraform 安裝包 wget https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip # 4. 解開安裝包 unzip terraform_0.11.13_linux_amd64.zip # 5. 將執行檔放到 /usr/local/bin 底下方便後續使用 sudo mv terraform /usr/local/bin/  之後再補充一些IaC 的 寫法</description>
-    </item>
-    
-    <item>
-      <title>Terraforming, 用terraform的方式列出aws資源</title>
-      <link>https://zealot0515.github.io/posts/terraforming-%E7%94%A8terraform%E7%9A%84%E6%96%B9%E5%BC%8F%E5%88%97%E5%87%BAaws%E8%B3%87%E6%BA%90/</link>
-      <pubDate>Wed, 08 May 2019 15:00:00 +0000</pubDate>
-      
-      <guid>https://zealot0515.github.io/posts/terraforming-%E7%94%A8terraform%E7%9A%84%E6%96%B9%E5%BC%8F%E5%88%97%E5%87%BAaws%E8%B3%87%E6%BA%90/</guid>
-      <description>先前在學怎麼寫terraform的時候, 曾經想過如果是既有的服務,
-該怎麼透過terraform來做管理, 雖然可以用資源的方式引入,
-但量多起來後也是一種困擾。
-今天在同事的介紹下知道了Terraforming這個工具,
-可以幫我們用terraform的格式列出使用的服務, 簡直方便極了,
-還可以透過參數印出tfstate, 取得詳細的參數數據, 方便開發。
-github: https://github.com/dtan4/terraforming
-terraforming s3  透過上面的指令就能列出aws帳戶下使用的s3服務tf 格式的寫法
-resource &amp;quot;aws_s3_bucket&amp;quot; &amp;quot;hoge&amp;quot; { bucket = &amp;quot;hoge&amp;quot; acl = &amp;quot;private&amp;quot; } resource &amp;quot;aws_s3_bucket&amp;quot; &amp;quot;fuga&amp;quot; { bucket = &amp;quot;fuga&amp;quot; acl = &amp;quot;private&amp;quot; }  加入 &amp;ndash;tfstate後則可列出詳細參數
-terraforming s3 --tfstate { &amp;quot;version&amp;quot;: 1, &amp;quot;serial&amp;quot;: 1, &amp;quot;modules&amp;quot;: { &amp;quot;path&amp;quot;: [ &amp;quot;root&amp;quot; ], &amp;quot;outputs&amp;quot;: { }, &amp;quot;resources&amp;quot;: { &amp;quot;aws_s3_bucket.hoge&amp;quot;: { &amp;quot;type&amp;quot;: &amp;quot;aws_s3_bucket&amp;quot;, &amp;quot;primary&amp;quot;: { &amp;quot;id&amp;quot;: &amp;quot;hoge&amp;quot;, &amp;quot;attributes&amp;quot;: { &amp;quot;acl&amp;quot;: &amp;quot;private&amp;quot;, &amp;quot;bucket&amp;quot;: &amp;quot;hoge&amp;quot;, &amp;quot;id&amp;quot;: &amp;quot;hoge&amp;quot; } } }, &amp;quot;aws_s3_bucket.</description>
-    </item>
-    
-    <item>
-      <title>透過第三方monitor aws服務 - site24x7</title>
-      <link>https://zealot0515.github.io/posts/%E9%80%8F%E9%81%8E%E7%AC%AC%E4%B8%89%E6%96%B9monitor-aws%E6%9C%8D%E5%8B%99-site24x7/</link>
-      <pubDate>Mon, 06 May 2019 16:00:00 +0000</pubDate>
-      
-      <guid>https://zealot0515.github.io/posts/%E9%80%8F%E9%81%8E%E7%AC%AC%E4%B8%89%E6%96%B9monitor-aws%E6%9C%8D%E5%8B%99-site24x7/</guid>
-      <description>site24x7是一個paas的第三方監控服務, 透過授權第三方讀取cloudwatch資訊, 來monitor服務的狀況, 設定指標進行告警。
-不過這邊要注意, 是透過aws cloudwatch api查詢指標, 有額外的費用存在！</description>
-    </item>
-    
-    <item>
-      <title>Private Subnet怎麼存取外網資訊？ AWS Vpc NAT Gateway</title>
-      <link>https://zealot0515.github.io/posts/private-subnet%E6%80%8E%E9%BA%BC%E5%AD%98%E5%8F%96%E5%A4%96%E7%B6%B2%E8%B3%87%E8%A8%8A-aws-vpc-nat-gateway/</link>
-      <pubDate>Sun, 05 May 2019 16:00:00 +0000</pubDate>
-      
-      <guid>https://zealot0515.github.io/posts/private-subnet%E6%80%8E%E9%BA%BC%E5%AD%98%E5%8F%96%E5%A4%96%E7%B6%B2%E8%B3%87%E8%A8%8A-aws-vpc-nat-gateway/</guid>
-      <description>當Vpc中有Private Subnet時候, 又希望在Private Subnet的機器能存取網路（下載更新, 資料), 就可以透過在public subnet建立NAT Gatway並連結到Private Subnet的方式, 讓其中的機器能夠存取網路。
-但 NAT Gateway費用上, 即便不使用也有低消, 大量使用流量費用頗高, 要注意！</description>
-    </item>
-    
-    <item>
-      <title>K6.io-壓測工具介紹</title>
-      <link>https://zealot0515.github.io/posts/k6-io-%E5%A3%93%E6%B8%AC%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%B4%B9/</link>
-      <pubDate>Wed, 03 Apr 2019 14:50:34 +0000</pubDate>
-      
-      <guid>https://zealot0515.github.io/posts/k6-io-%E5%A3%93%E6%B8%AC%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%B4%B9/</guid>
-      <description>有時候上線之前, 我們會希望伺服器是有經過壓力測試的, 而不是開放第一天被壓力測試, 這邊就需要準備一些工具來使用&amp;hellip;這邊就介紹一款K6.io, 是 https://www.loadimpact.com 底層使用的壓測工具。
-官方網站：https://k6.io/ 使用此工具很簡單, 指定人數/時間/腳本就可以運作 問題點會出在腳本怎麼撰寫 (另外人數與記憶體有關, 看開工具的機器而定)
-這邊講一個簡單的腳本寫法
- 建立一個test.js 輸入下面的內容 後存檔 ``` import http from &amp;ldquo;k6/http&amp;rdquo;; import { check } from &amp;ldquo;k6&amp;rdquo;;  export default function() { check(http.get(&amp;ldquo;www.targetweb.com&amp;rdquo;), { &amp;ldquo;status is 200&amp;rdquo;: &amp;reg; =&amp;gt; r.status == 200, }); }
-* 用以下指令運作工具  k6 &amp;ndash;vus=10 &amp;ndash;duration=300s test.js ``` * 就會用10個人持續連線網站300秒 * 最後統計出連線時間的數據 </description>
-    </item>
-    
-    <item>
-      <title>CICD相關服務介紹</title>
-      <link>https://zealot0515.github.io/posts/cicd%E7%9B%B8%E9%97%9C%E6%9C%8D%E5%8B%99%E4%BB%8B%E7%B4%B9/</link>
-      <pubDate>Wed, 03 Apr 2019 14:11:36 +0000</pubDate>
-      
-      <guid>https://zealot0515.github.io/posts/cicd%E7%9B%B8%E9%97%9C%E6%9C%8D%E5%8B%99%E4%BB%8B%E7%B4%B9/</guid>
-      <description>CI/CD能夠大幅增加軟體開發的效率以及穩定度, 可以使用的解決方案也很多, 這邊列出一些常見的以及用途範圍。 程式碼版控:  AWS Code Commit AWS原生的版控系統, 可以與Git無痛接軌
- Github 最大的程式碼存放網站, 目前免費版的專案也可以開無限個private儲存庫, 唯有一些功能需要付費。
- Bitbucket 另外一個使用Git的雲端儲存庫, 也可以開無限的private儲存庫。
- Gitlab, Gitea 可以讓用戶自己架設在地端
-  CI:  AWS CodeBuild 適用於CodeCommit, S3, Github, Bitbucket, 可使用linux/windows配合不同docker image編譯
- Jenkins CI 老牌的開源工具, 讓用戶安裝在地端進行CICD, 本身具跨平台優勢, 也可以用多主機架構來分配工作進行持續交付, 適合公司想搭建內部CICD伺服器使用。
- Travis CI 僅適用於Github, 但使用者數量多, 使用上也較穩定, 不過C# .net方面由於是在linux上編譯, 可能會有問題 免費版可以對public的儲存庫無限使用, private則每個帳號有100次試用。
- Appveyor 有多個Source來源可以選擇 對windows的編譯支援度較高, 價格上也比Travis CI略便宜
- Circle CI 可使用於Github, Bitbucket 免費版有提供private儲存庫的支援, 採每月次數限制的
- Drone.io 支援GitHub, GitHubEnterprise, Bitbucket, GitLab, 可以架設在地端</description>
-    </item>
-    
-    <item>
-      <title>AWS CodeBuild - 建立Windows主機的DockerImage</title>
-      <link>https://zealot0515.github.io/posts/aws-codebuild-%E5%BB%BA%E7%AB%8Bwindows%E4%B8%BB%E6%A9%9F%E7%9A%84dockerimage/</link>
-      <pubDate>Wed, 03 Apr 2019 01:50:52 +0000</pubDate>
-      
-      <guid>https://zealot0515.github.io/posts/aws-codebuild-%E5%BB%BA%E7%AB%8Bwindows%E4%B8%BB%E6%A9%9F%E7%9A%84dockerimage/</guid>
-      <description>如果想用AWS CodeBuild Windows Server 建置 .Net, 或者一些C# Framework, 有時候會遇到使用原生的無法正常編譯的問題, 這邊就要自己建立合適環境的Docker Image.
-Instructions 環境建置： 使用一台主機或者虛擬機或者直接 Launch一台EC2 (Windows Sever 2016 with Containers) 至少給60GB空間 建議是t2. Medium以上的機器, build image效率會較好 以下是直接透過EC2進行的步驟 啟動完成後透過遠端桌面連入
- 運行命令管理員(cmd.exe) 建立build Image的工作目錄：  mkdir C:\BuildTools cd C:\BuildTools  建立C:\BuildTools\Dockerfile:
-  # escape=` FROM microsoft/dotnet-framework:4.7.2-runtime SHELL [&amp;quot;powershell&amp;quot;, &amp;quot;-Command&amp;quot;, &amp;quot;$ErrorActionPreference = &#39;Stop&#39;; $ProgressPreference = &#39;SilentlyContinue&#39;;&amp;quot;] #Install NuGet CLI ENV NUGET_VERSION 4.4.1 RUN New-Item -Type Directory $Env:ProgramFiles\NuGet; ` Invoke-WebRequest -UseBasicParsing https://dist.nuget.org/win-x86-commandline/v$Env:NUGET_VERSION/nuget.exe -OutFile $Env:ProgramFiles\NuGet\nuget.exe # Install VS Test Agent RUN Invoke-WebRequest -UseBasicParsing https://download.</description>
-    </item>
-    
-    <item>
-      <title>DotNet CI/CD 專案無法編譯處理</title>
-      <link>https://zealot0515.github.io/posts/dotnet-ci-cd-%E5%B0%88%E6%A1%88%E7%84%A1%E6%B3%95%E7%B7%A8%E8%AD%AF%E8%99%95%E7%90%86/</link>
-      <pubDate>Wed, 03 Apr 2019 01:49:03 +0000</pubDate>
-      
-      <guid>https://zealot0515.github.io/posts/dotnet-ci-cd-%E5%B0%88%E6%A1%88%E7%84%A1%E6%B3%95%E7%B7%A8%E8%AD%AF%E8%99%95%E7%90%86/</guid>
-      <description>有客戶專案想導入CI/CD, 專案的網頁SourceCode是用DotNet Web製作, 因為客戶也還沒使用版控, 這邊就介紹他使用了Github, 順便教學了一下Git的使用。
-這邊第一個想選用的是TravisCI, 因為直接與Github對接, 也方便客戶使用 不過測試從客戶那邊取得的測試程式碼, 一測試就遭遇悲劇&amp;hellip; 因為Travis是用Linux Container來Build專案, 但對C#的支援有限, 尤其是使用到Windows的許多Framework, 測到這邊只能放棄TravisCI。
-再來有找到一款有提供Windows主機做CI的Saas服務, Appveyor, 對C#支援性提高許多, 我一放入測試專案測試就編譯成功了！ 後續跟客戶拿了第二包程式碼進行測試, 因為真的有放入一些商業用途的程式碼, 編譯了又出現缺少東西的問題&amp;hellip;只好再換下一個&amp;hellip;
-最後使用了AWS的CodeBuild, 有提供Windows的主機, 不過也遇到無法正常編譯的問題, 但AWS有提供自製docker image的選項, 所以這邊就研究了一下怎麼建立配合客戶專案的Image, 詳細可以看這邊({% post_link AWS-CodeBuild-建立Windows主機的DockerImage 建立客製化Image %}), 透過直接幫客戶建置了必須的環境, 這塊才算安然度過&amp;hellip; 不過解決了第二包程式碼之後, 正式專案接入後, 又遭遇到問題囉, 因為客戶先前其實只有一個人在開發, 所以其實專案相依性上沒有控制得很好, 一放上雲端後有各種的missing refence問題, 這邊好像沒啥好方式, 只能跟客戶一起手把手訂下一些規範, 然後幫忙處理一下專案的問題&amp;hellip;
-經過了這些努力, 把客戶的CI/CD最難過的一關解決了, 也能開始後續的自動部署部分。</description>
-    </item>
     
   </channel>
 </rss>

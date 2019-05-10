@@ -1,41 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Pagi&#39;s Blog</title>
-    <link>https://zealot0515.github.io/categories/</link>
-    <description>Recent content in Categories on Pagi&#39;s Blog</description>
+    <title>Categories on My New Hugo Site</title>
+    <link>http://example.org/categories/</link>
+    <description>Recent content in Categories on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 09 May 2019 13:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
     
-	<atom:link href="https://zealot0515.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>常用工具</title>
-      <link>https://zealot0515.github.io/categories/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</link>
-      <pubDate>Thu, 09 May 2019 13:00:00 +0000</pubDate>
-      
-      <guid>https://zealot0515.github.io/categories/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>介紹</title>
-      <link>https://zealot0515.github.io/categories/%E4%BB%8B%E7%B4%B9/</link>
-      <pubDate>Mon, 06 May 2019 16:00:00 +0000</pubDate>
-      
-      <guid>https://zealot0515.github.io/categories/%E4%BB%8B%E7%B4%B9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>實務應用</title>
-      <link>https://zealot0515.github.io/categories/%E5%AF%A6%E5%8B%99%E6%87%89%E7%94%A8/</link>
-      <pubDate>Wed, 03 Apr 2019 14:50:34 +0000</pubDate>
-      
-      <guid>https://zealot0515.github.io/categories/%E5%AF%A6%E5%8B%99%E6%87%89%E7%94%A8/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

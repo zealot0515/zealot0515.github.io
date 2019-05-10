@@ -2,7 +2,7 @@
 <html lang="">
 	<head>
 		<title>
-	Tag | CICD
+	讓cpu假忙的小工具 stress
 </title>
 		<style>
 	body {
@@ -26,8 +26,19 @@
 
 
 	
+	
+	
 	<meta name="author" content="Pagi" />
-	<meta name="description" content="" />
+	<meta name="description" content="有時候我們要測試程式在系統忙碌/資源不足的狀態下會不會有異常,
+或者監控系統是否能夠順利監控到異常狀況,
+要怎麼讓系統進入忙碌狀態, 就會是一個難搞的問題,
+這邊有一個小工具, 叫做 stress, 透過運算能夠簡單的給系統壓力,
+不過工具本身會直接把cpu吃好吃滿, 所以可以搭配cpulimit套件,
+來避免cpu被完全吃光。
+ 安裝
+因為兩個都是ubuntu內建的套件,
+直接 sudo apt-get install stress cpulimit 就可以安裝好收工 使用
+stress &amp;ndash;cpu 1 上面是產生一個worker來壓測cpu 有記憶體需求可以使用 &amp;ndash;vm(-m) 來產生特定的worker 或者可以參考下面的manpage說明 ``` Name stress - tool to impose load on and stress test systems Synopsis stress [OPTION [ARG]] &amp;hellip; Description  &amp;lsquo;stress&amp;rsquo; imposes certain types of compute stress on your system -?, &amp;ndash;help show this help statement &amp;ndash;version show version statement -v, &amp;ndash;verbose be verbose -q, &amp;ndash;quiet be quiet -n, &amp;ndash;dry-run show what would have been done -t, &amp;ndash;timeout N timeout after N seconds &amp;ndash;backoff N wait factor of N microseconds before work starts -c, &amp;ndash;cpu N spawn N workers spinning on sqrt() -i, &amp;ndash;io N spawn N workers spinning on sync() -m, &amp;ndash;vm N spawn N workers spinning on malloc()/free() &amp;ndash;vm-bytes B malloc B bytes per vm worker (default is 256MB) &amp;ndash;vm-stride B touch a byte every B bytes (default is 4096) &amp;ndash;vm-hang N sleep N secs before free (default none, 0 is inf) &amp;ndash;vm-keep redirty memory instead of freeing and reallocating -d, &amp;ndash;hdd N spawn N workers spinning on write()/unlink() &amp;ndash;hdd-bytes B write B bytes per hdd worker (default is 1GB) Example: stress &amp;ndash;cpu 8 &amp;ndash;io 4 &amp;ndash;vm 2 &amp;ndash;vm-bytes 128M &amp;ndash;timeout 10s" />
 
 
 
@@ -37,8 +48,6 @@
 <link rel="shortcut icon" href="/img/defaultFav.ico">
 
 
-
-    <link rel="alternate" type="application/rss+xml" href="https://zealot0515.github.io/tags/cicd/index.xml" title="Pagi's Blog" />
 
 
 		
@@ -178,25 +187,25 @@ var bodyBgSwitchIndex = 0;
 			<a class="ui label olive " href="/tags/aws" title="aws">aws</a>
 		
 			
-			<a class="ui label olive " href="/tags/cicd" title="cicd">cicd</a>
+			<a class="ui label orange " href="/tags/cicd" title="cicd">cicd</a>
 		
 			
-			<a class="ui label brown " href="/tags/codebuild" title="codebuild">codebuild</a>
+			<a class="ui label green " href="/tags/codebuild" title="codebuild">codebuild</a>
 		
 			
-			<a class="ui label orange " href="/tags/iac" title="iac">iac</a>
+			<a class="ui label red " href="/tags/iac" title="iac">iac</a>
 		
 			
-			<a class="ui label pink " href="/tags/terraform" title="terraform">terraform</a>
+			<a class="ui label orange " href="/tags/terraform" title="terraform">terraform</a>
 		
 			
-			<a class="ui label red " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
+			<a class="ui label blue " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
 		
 			
-			<a class="ui label violet " href="/tags/monitor" title="monitor">monitor</a>
+			<a class="ui label purple " href="/tags/monitor" title="monitor">monitor</a>
 		
 			
-			<a class="ui label violet " href="/tags/nat" title="nat">nat</a>
+			<a class="ui label brown " href="/tags/nat" title="nat">nat</a>
 		
 	
 
@@ -327,8 +336,6 @@ var bodyBgSwitchIndex = 0;
 			<div class="flipper">
 				<div class="front">
 					
-	
-		
 	<nav class="ui top secondary menu bar">
 	
 	<div class="item">
@@ -346,14 +353,14 @@ var bodyBgSwitchIndex = 0;
 
 	
 	
-		<div class="item">
-			<a href="/posts">
-				<i class="inverted big link archive icon" title="Archive"></i>
-			</a>
-		</div>
-	
 
 	
+	
+		<div class="item">
+			<a href="/tags">
+				<i class="inverted big link tags icon" title="All Tags"></i>
+			</a>
+		</div>
 	
 
 	
@@ -370,6 +377,12 @@ var bodyBgSwitchIndex = 0;
 
 	
 	
+		<div class="ui container tablet computer only grid">
+			<div class="item" onClick="$('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');">
+				<i class="inverted big link sidebar icon" title="Show Sidebar"></i>
+			</div>
+		</div>
+	
 
 	
 	
@@ -381,10 +394,11 @@ var bodyBgSwitchIndex = 0;
 	
 </nav>
 
-	
+
 	<div class="ui centered grid">
-		<div class="fifteen wide mobile fifteen wide tablet four wide computer column">
-			<div class="ui inverted accordion">
+		
+		<div class="sixteen wide mobile only column">
+				<div class="ui inverted accordion">
 	<div id="header" class="ui inverted segment column box">		
 		
 		<header id="author" class="ui top attached center aligned inverted segment">
@@ -404,16 +418,16 @@ var bodyBgSwitchIndex = 0;
 		</header>
 
 		
-		<div class="active title header-title">
+		<div class=" title header-title">
 			
 				<div id="tag-category-pop" class="ui red right corner label">
-					<i class="hand point icon up" title="Show/hide tags and categories"></i>
+					<i class="hand point icon down" title="Show/hide tags and categories"></i>
 				</div>
 			
 		</div>
 		
 		
-		<div id="tag-category" class="active content">
+		<div id="tag-category" class=" content">
 			
 				<section class="ui attached center aligned inverted segment dream-tags none flexbox">
 					
@@ -427,28 +441,28 @@ var bodyBgSwitchIndex = 0;
 	
 		
 			
-			<a class="ui label blue " href="/tags/aws" title="aws">aws</a>
+			<a class="ui label red " href="/tags/aws" title="aws">aws</a>
 		
 			
-			<a class="ui label yellow " href="/tags/cicd" title="cicd">cicd</a>
+			<a class="ui label pink " href="/tags/cicd" title="cicd">cicd</a>
 		
 			
-			<a class="ui label brown " href="/tags/codebuild" title="codebuild">codebuild</a>
+			<a class="ui label yellow " href="/tags/codebuild" title="codebuild">codebuild</a>
 		
 			
-			<a class="ui label orange " href="/tags/iac" title="iac">iac</a>
+			<a class="ui label teal " href="/tags/iac" title="iac">iac</a>
 		
 			
-			<a class="ui label teal " href="/tags/terraform" title="terraform">terraform</a>
+			<a class="ui label violet " href="/tags/terraform" title="terraform">terraform</a>
 		
 			
-			<a class="ui label teal " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
+			<a class="ui label olive " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
 		
 			
-			<a class="ui label green " href="/tags/monitor" title="monitor">monitor</a>
+			<a class="ui label purple " href="/tags/monitor" title="monitor">monitor</a>
 		
 			
-			<a class="ui label teal " href="/tags/nat" title="nat">nat</a>
+			<a class="ui label yellow " href="/tags/nat" title="nat">nat</a>
 		
 	
 
@@ -576,119 +590,190 @@ var bodyBgSwitchIndex = 0;
 </div>
 
 		</div>
-		
-		<div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list">
-			<div class="cards row box">
+
+		<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
+			
+			<section class="ui secondary top attached black segment post-head">
+				<h1 class="post-title">
+					讓cpu假忙的小工具 stress
+				</h1>
+
+				<div class="sub header">
+					<div><span><i class="calendar outline icon"></i>May 10, 2019</span></div>
+					
+					<div><span class="disqusComment"><i class="comment outline icon"></i><a href="https://zealot0515.github.io/posts/%E8%AE%93cpu%E5%81%87%E5%BF%99%E7%9A%84%E5%B0%8F%E5%B7%A5%E5%85%B7-stress/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="e83ed2896de05fc661f6fad68309df98"></a></span></div>
+					<div><span><i class="clock outline icon"></i>2 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on May 10, 2019</span></div>
+				</div>
+				<hr>
+
+				
+
+				<article class="post-content twemoji">
+					<p>有時候我們要測試程式在系統忙碌/資源不足的狀態下會不會有異常,<br />
+或者監控系統是否能夠順利監控到異常狀況,</p>
+
+<p>要怎麼讓系統進入忙碌狀態, 就會是一個難搞的問題,</p>
+
+<p>這邊有一個小工具, 叫做 stress, 透過運算能夠簡單的給系統壓力,</p>
+
+<p>不過工具本身會直接把cpu吃好吃滿, 所以可以搭配cpulimit套件,</p>
+
+<p>來避免cpu被完全吃光。</p>
+
+<ul>
+<li>安裝<br />
+因為兩個都是ubuntu內建的套件,<br />
+直接 sudo apt-get install stress cpulimit 就可以安裝好收工</li>
+<li>使用<br />
+stress &ndash;cpu 1
+上面是產生一個worker來壓測cpu
+有記憶體需求可以使用 &ndash;vm(-m) 來產生特定的worker
+或者可以參考下面的manpage說明
+```
+Name
+stress - tool to impose load on and stress test systems
+Synopsis
+stress [OPTION [ARG]] &hellip;
+Description</li>
+</ul>
+
+<p>&lsquo;stress&rsquo; imposes certain types of compute stress on your system
+-?, &ndash;help
+show this help statement
+&ndash;version
+show version statement
+-v, &ndash;verbose
+be verbose
+-q, &ndash;quiet
+be quiet
+-n, &ndash;dry-run
+show what would have been done
+-t, &ndash;timeout N
+timeout after N seconds
+&ndash;backoff N
+wait factor of N microseconds before work starts
+-c, &ndash;cpu N
+spawn N workers spinning on sqrt()
+-i, &ndash;io N
+spawn N workers spinning on sync()
+-m, &ndash;vm N
+spawn N workers spinning on malloc()/free()
+&ndash;vm-bytes B
+malloc B bytes per vm worker (default is 256MB)
+&ndash;vm-stride B
+touch a byte every B bytes (default is 4096)
+&ndash;vm-hang N
+sleep N secs before free (default none, 0 is inf)
+&ndash;vm-keep
+redirty memory instead of freeing and reallocating
+-d, &ndash;hdd N
+spawn N workers spinning on write()/unlink()
+&ndash;hdd-bytes B
+write B bytes per hdd worker (default is 1GB)
+Example: stress &ndash;cpu 8 &ndash;io 4 &ndash;vm 2 &ndash;vm-bytes 128M &ndash;timeout 10s</p>
+
+<p>Note: Numbers may be suffixed with s,m,h,d,y (time) or B,K,M,G (size).</p>
+
+<pre><code>
+* 如果不想cpu被吃光光怎麼辦？
+  透過ps ux 查到 stress的pid, 
+  使用 cpulimit 來限制其cpu使用量
+  指令格式： 
+</code></pre>
+
+<p># 限制 PID 為 13131 的程式其 CPU 用量上限為 70%
+  cpulimit &ndash;pid 13131 &ndash;limit 70
+```</p>
+
+<ul>
+<li>透過這兩個工具, 就能夠讓系統進入假忙狀態, 測試程式/或者監控系統是否正常運作囉！</li>
+</ul>
+
+				</article>				
+			</section>
+
+			
+			<section class="ui secondary attached segment dream-tags">
 				
 					
 
 
-	
-	
-		
-	
 
 
-
-<article class="blog-card none flexbox">
 	
-	<img class="image" src="/img/default1.jpg"></img>
-	<div class="title-content twemoji">
-		<h3><a class="title" href=https://zealot0515.github.io/posts/cicd%E7%9B%B8%E9%97%9C%E6%9C%8D%E5%8B%99%E4%BB%8B%E7%B4%B9/>CICD相關服務介紹</a></h3>
-		<div class="intro twemoji">
-			
-				<br><br>
-			
-		</div>
-	</div>
-
+		<a class="ui label purple " href="/tags/tools" title="tools">tools</a>
 	
-	<div class="utility-info">
-		<ul class="utility-list">
-			
-				<div><i class="comment icon"></i><span class="disqus-comment-count" data-disqus-identifier="857647dae9b94511ee7789b3ea6a4d7f"></span></div>
-			
-			<div><span><i class="calendar icon"></i>Apr 3, 2019</span></div>
-			<div><span><i class="clock icon"></i>1 min read</span></div>
-		</ul>
-	</div>
-	<div class="color-overlay"></div>
-</article>
+
 
 				
+			</section>
+
+			
+			
+				<section class="ui secondary  attached segment share row box">
 					
 
 
-	
-	
-		
-	
 
 
 
-<article class="blog-card none flexbox">
+
+
+
+<div class="author">
 	
-	<img class="image" src="/img/default3.jpg"></img>
-	<div class="title-content twemoji">
-		<h3><a class="title" href=https://zealot0515.github.io/posts/aws-codebuild-%E5%BB%BA%E7%AB%8Bwindows%E4%B8%BB%E6%A9%9F%E7%9A%84dockerimage/>AWS CodeBuild - 建立Windows主機的DockerImage</a></h3>
-		<div class="intro twemoji">
-			
-				<br><br>
-			
-		</div>
+	<img class="avatar" src="/uploads/15740812_1539957876020597_216031373147234651_n.jpg">
+	
+</div>
+<div class="info grow flexbox">
+	
+	<p class="name">Pagi</p>
+	
+	<p class="desc">Kept Going...</p>
+</div>
+
+
+<section class="buttons row box">
+	<div class="facebook none flexbox" href="#" onclick="window.open(
+			'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+			'facebook-share-dialog',
+			'width=626,height=436'); return false;">
+		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
 	</div>
-
-	
-	<div class="utility-info">
-		<ul class="utility-list">
-			
-				<div><i class="comment icon"></i><span class="disqus-comment-count" data-disqus-identifier="0ac3b14ad83764464d5564158f1bb14f"></span></div>
-			
-			<div><span><i class="calendar icon"></i>Apr 3, 2019</span></div>
-			<div><span><i class="clock icon"></i>2 min read</span></div>
-		</ul>
+	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;讓cpu假忙的小工具 stress  https:\/\/zealot0515.github.io\/posts\/%E8%AE%93cpu%E5%81%87%E5%BF%99%E7%9A%84%E5%B0%8F%E5%B7%A5%E5%85%B7-stress\/','_self')">
+		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
 	</div>
-	<div class="color-overlay"></div>
-</article>
+</section>
 
-				
+				</section>
+			
+
+			
+			
+			
+
+			
+			
+				<div class="ui secondary bottom attached stacked segment disqus">
 					
+<div id="disqus_thread"></div>
+<script>
+	var disqus_config = function () {
+		this.page.url = 'https:\/\/zealot0515.github.io\/posts\/%E8%AE%93cpu%E5%81%87%E5%BF%99%E7%9A%84%E5%B0%8F%E5%B7%A5%E5%85%B7-stress\/';
+		this.page.identifier = 'e83ed2896de05fc661f6fad68309df98';
+	};
+	(function() {
+   	var d = document, s = d.createElement('script');
+   	s.src = 'https://' + 'zealot0515' + '.disqus.com/embed.js';
+   	s.setAttribute('data-timestamp', +new Date());
+   	(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-
-	
-	
-		
-	
-
-
-
-<article class="blog-card none flexbox">
-	
-	<img class="image" src="/img/default2.jpg"></img>
-	<div class="title-content twemoji">
-		<h3><a class="title" href=https://zealot0515.github.io/posts/dotnet-ci-cd-%E5%B0%88%E6%A1%88%E7%84%A1%E6%B3%95%E7%B7%A8%E8%AD%AF%E8%99%95%E7%90%86/>DotNet CI/CD 專案無法編譯處理</a></h3>
-		<div class="intro twemoji">
+				</div>
 			
-				<br><br>
-			
-		</div>
-	</div>
-
-	
-	<div class="utility-info">
-		<ul class="utility-list">
-			
-				<div><i class="comment icon"></i><span class="disqus-comment-count" data-disqus-identifier="a3fbb41de9638a1a57386b0134842f60"></span></div>
-			
-			<div><span><i class="calendar icon"></i>Apr 3, 2019</span></div>
-			<div><span><i class="clock icon"></i>1 min read</span></div>
-		</ul>
-	</div>
-	<div class="color-overlay"></div>
-</article>
-
-				
-			</div>
 		</div>
 	</div>
 
@@ -807,9 +892,7 @@ var bodyBgSwitchIndex = 0;
 		
 	
 	
-		
-			<script id="dsq-count-scr" src="//zealot0515.disqus.com/count.js" async></script>
-		
+		<script id="dsq-count-scr" src="//zealot0515.disqus.com/count.js" async></script>
 	
 
 		

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tools on Pagi&#39;s Blog</title>
+    <link>https://zealot0515.github.io/tags/tools/</link>
+    <description>Recent content in tools on Pagi&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 10 May 2019 07:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zealot0515.github.io/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>讓cpu假忙的小工具 stress</title>
+      <link>https://zealot0515.github.io/posts/%E8%AE%93cpu%E5%81%87%E5%BF%99%E7%9A%84%E5%B0%8F%E5%B7%A5%E5%85%B7-stress/</link>
+      <pubDate>Fri, 10 May 2019 07:00:00 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/posts/%E8%AE%93cpu%E5%81%87%E5%BF%99%E7%9A%84%E5%B0%8F%E5%B7%A5%E5%85%B7-stress/</guid>
+      <description>有時候我們要測試程式在系統忙碌/資源不足的狀態下會不會有異常,
+或者監控系統是否能夠順利監控到異常狀況,
+要怎麼讓系統進入忙碌狀態, 就會是一個難搞的問題,
+這邊有一個小工具, 叫做 stress, 透過運算能夠簡單的給系統壓力,
+不過工具本身會直接把cpu吃好吃滿, 所以可以搭配cpulimit套件,
+來避免cpu被完全吃光。
+ 安裝
+因為兩個都是ubuntu內建的套件,
+直接 sudo apt-get install stress cpulimit 就可以安裝好收工 使用
+stress &amp;ndash;cpu 1 上面是產生一個worker來壓測cpu 有記憶體需求可以使用 &amp;ndash;vm(-m) 來產生特定的worker 或者可以參考下面的manpage說明 ``` Name stress - tool to impose load on and stress test systems Synopsis stress [OPTION [ARG]] &amp;hellip; Description  &amp;lsquo;stress&amp;rsquo; imposes certain types of compute stress on your system -?, &amp;ndash;help show this help statement &amp;ndash;version show version statement -v, &amp;ndash;verbose be verbose -q, &amp;ndash;quiet be quiet -n, &amp;ndash;dry-run show what would have been done -t, &amp;ndash;timeout N timeout after N seconds &amp;ndash;backoff N wait factor of N microseconds before work starts -c, &amp;ndash;cpu N spawn N workers spinning on sqrt() -i, &amp;ndash;io N spawn N workers spinning on sync() -m, &amp;ndash;vm N spawn N workers spinning on malloc()/free() &amp;ndash;vm-bytes B malloc B bytes per vm worker (default is 256MB) &amp;ndash;vm-stride B touch a byte every B bytes (default is 4096) &amp;ndash;vm-hang N sleep N secs before free (default none, 0 is inf) &amp;ndash;vm-keep redirty memory instead of freeing and reallocating -d, &amp;ndash;hdd N spawn N workers spinning on write()/unlink() &amp;ndash;hdd-bytes B write B bytes per hdd worker (default is 1GB) Example: stress &amp;ndash;cpu 8 &amp;ndash;io 4 &amp;ndash;vm 2 &amp;ndash;vm-bytes 128M &amp;ndash;timeout 10s</description>
+    </item>
+    
+  </channel>
+</rss>

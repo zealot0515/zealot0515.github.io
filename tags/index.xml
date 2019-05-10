@@ -5,10 +5,28 @@
     <link>https://zealot0515.github.io/tags/</link>
     <description>Recent content in Tags on Pagi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 09 May 2019 13:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 May 2019 07:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zealot0515.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>tools</title>
+      <link>https://zealot0515.github.io/tags/tools/</link>
+      <pubDate>Fri, 10 May 2019 07:00:00 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS</title>
+      <link>https://zealot0515.github.io/tags/aws/</link>
+      <pubDate>Thu, 09 May 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/tags/aws/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>IaC</title>
@@ -20,20 +38,11 @@
     </item>
     
     <item>
-      <title>Terraform</title>
+      <title>terraform</title>
       <link>https://zealot0515.github.io/tags/terraform/</link>
       <pubDate>Thu, 09 May 2019 13:00:00 +0000</pubDate>
       
       <guid>https://zealot0515.github.io/tags/terraform/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>aws</title>
-      <link>https://zealot0515.github.io/tags/aws/</link>
-      <pubDate>Thu, 09 May 2019 13:00:00 +0000</pubDate>
-      
-      <guid>https://zealot0515.github.io/tags/aws/</guid>
       <description></description>
     </item>
     

@@ -5,10 +5,39 @@
     <link>https://zealot0515.github.io/tags/aws/</link>
     <description>Recent content in aws on Pagi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 09 May 2019 13:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 May 2019 16:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zealot0515.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AWS DeepRacer Lab體驗 - 機器學習</title>
+      <link>https://zealot0515.github.io/posts/aws-deepracer-lab%E9%AB%94%E9%A9%97-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/</link>
+      <pubDate>Sun, 12 May 2019 16:00:00 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/posts/aws-deepracer-lab%E9%AB%94%E9%A9%97-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/</guid>
+      <description>今天參加了aws舉辦的DeepRacer的Lab!
+DeepRacer是aws包裝好的機器學習服務, 可以很快上手體驗機器學習的魅力,
+是透過強化學習的訓練方式, 來讓機器車知道怎麼走最好,
+與以前的監督式學習不太一樣,
+是透過為每個行為評分, 給予獎勵的方式, 來讓機器知道怎樣算是對的行為。
+就有點像是我們訓練寵物, 通常會搭配小點心一樣, 透過正回饋來訓練。
+workshop github:
+https://github.com/aws-samples/aws-deepracer-workshops
+DeepRacer使用的機器車, 一台不便宜, 399鎂
+同時進行lab時候, 我們需要對機器進行訓練,
+最後才能產出給機器車使用的模組。
+這個部分大概需要2-3小時,
+每個小時訓練用的機器費用為3USD,
+所以認真要訓練出強有力的機器車模組, 可能需要花點＄＄。
+不過如果小孩子很愛, 我想家長應該都還是會讓小孩盡情發揮吧！？
+另外有提到另外一種open source的車子,
+是Raspberry Pi + ROS 的小鴨車車, 學習的方式不太一樣,
+價格上也相對比較親民, 也是一種可以研究看看的
+https://drive.google.com/file/d/1GlHRDvHVj_oOSxBioaHxdn5bMR3MqQhr/view
+DeepRacer參考：
+https://www.ithome.com.tw/news/130338</description>
+    </item>
     
     <item>
       <title>Terraform IaC Tool </title>

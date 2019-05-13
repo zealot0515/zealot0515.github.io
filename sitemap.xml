@@ -3,26 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://zealot0515.github.io/posts/aws-deepracer-lab%E9%AB%94%E9%A9%97-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/</loc>
+    <lastmod>2019-05-12T16:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zealot0515.github.io/categories/</loc>
-    <lastmod>2019-05-10T07:00:00+00:00</lastmod>
+    <lastmod>2019-05-12T16:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zealot0515.github.io/</loc>
-    <lastmod>2019-05-10T07:00:00+00:00</lastmod>
+    <lastmod>2019-05-12T16:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zealot0515.github.io/posts/</loc>
-    <lastmod>2019-05-10T07:00:00+00:00</lastmod>
+    <lastmod>2019-05-12T16:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zealot0515.github.io/tags/</loc>
-    <lastmod>2019-05-10T07:00:00+00:00</lastmod>
+    <lastmod>2019-05-12T16:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zealot0515.github.io/tags/aws/</loc>
+    <lastmod>2019-05-12T16:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zealot0515.github.io/tags/ml/</loc>
+    <lastmod>2019-05-12T16:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zealot0515.github.io/categories/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/</loc>
+    <lastmod>2019-05-12T16:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -50,18 +73,12 @@
   </url>
   
   <url>
-    <loc>https://zealot0515.github.io/tags/terraform/</loc>
-    <lastmod>2019-05-09T13:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://zealot0515.github.io/posts/terraform-iac-tool/</loc>
     <lastmod>2019-05-09T13:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zealot0515.github.io/tags/aws/</loc>
+    <loc>https://zealot0515.github.io/tags/terraform/</loc>
     <lastmod>2019-05-09T13:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

@@ -53,7 +53,8 @@ https://openapm.io/landscape
 有一部分就是從prometheus的node exporter將機器數據導入prometheus DB裡, 再透過Grafana 去顯示圖表, 方便監控
 也有透過第三方, site24x7, new relic, cloud watch這些轉入prometheus, 再進行繪圖, 但這部分就是透過找尋方法/API, 自行寫指標工具的方式導入, 比較複雜。
 但簡單說, 就是 資料來源&amp;gt;資料庫&amp;gt;監控後台 這樣的行為
-要用哪些工具來組合, 就依照需求來串接。</description>
+要用哪些工具來組合, 就依照需求來串接。
+示例圖：</description>
     </item>
     
     <item>

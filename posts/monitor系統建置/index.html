@@ -2,7 +2,7 @@
 <html lang="">
 	<head>
 		<title>
-	Tag | ml
+	Monitor系統建置
 </title>
 		<style>
 	body {
@@ -26,8 +26,18 @@
 
 
 	
+	
+	
 	<meta name="author" content="Pagi" />
-	<meta name="description" content="" />
+	<meta name="description" content="最近工作有接觸到建設monitor系統
+做了一些研究後, 其實現有的工具非常的多, 開源也有許多優秀的工具。
+https://openapm.io/landscape
+這個網站就列出了許多服務, 有data source, 也有db, 也有分析用的前端。
+以目前我自己接觸的為例,
+有一部分就是從prometheus的node exporter將機器數據導入prometheus DB裡, 再透過Grafana 去顯示圖表, 方便監控
+也有透過第三方, site24x7, new relic, cloud watch這些轉入prometheus, 再進行繪圖, 但這部分就是透過找尋方法/API, 自行寫指標工具的方式導入, 比較複雜。
+但簡單說, 就是 資料來源&amp;gt;資料庫&amp;gt;監控後台 這樣的行為
+要用哪些工具來組合, 就依照需求來串接。" />
 
 
 
@@ -37,8 +47,6 @@
 <link rel="shortcut icon" href="/img/defaultFav.ico">
 
 
-
-    <link rel="alternate" type="application/rss+xml" href="https://zealot0515.github.io/tags/ml/index.xml" title="Pagi's Blog" />
 
 
 		
@@ -175,28 +183,28 @@ var bodyBgSwitchIndex = 0;
 	
 		
 			
-			<a class="ui label orange " href="/tags/aws" title="aws">aws</a>
+			<a class="ui label brown " href="/tags/aws" title="aws">aws</a>
 		
 			
-			<a class="ui label yellow " href="/tags/cicd" title="cicd">cicd</a>
+			<a class="ui label teal " href="/tags/cicd" title="cicd">cicd</a>
 		
 			
-			<a class="ui label pink " href="/tags/codebuild" title="codebuild">codebuild</a>
+			<a class="ui label orange " href="/tags/codebuild" title="codebuild">codebuild</a>
 		
 			
-			<a class="ui label purple " href="/tags/iac" title="iac">iac</a>
+			<a class="ui label olive " href="/tags/iac" title="iac">iac</a>
 		
 			
-			<a class="ui label teal " href="/tags/monitor" title="monitor">monitor</a>
+			<a class="ui label brown " href="/tags/monitor" title="monitor">monitor</a>
 		
 			
-			<a class="ui label teal " href="/tags/terraform" title="terraform">terraform</a>
+			<a class="ui label purple " href="/tags/terraform" title="terraform">terraform</a>
 		
 			
-			<a class="ui label blue " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
+			<a class="ui label green " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
 		
 			
-			<a class="ui label olive " href="/tags/ml" title="ml">ml</a>
+			<a class="ui label blue " href="/tags/ml" title="ml">ml</a>
 		
 	
 
@@ -352,8 +360,6 @@ var bodyBgSwitchIndex = 0;
 			<div class="flipper">
 				<div class="front">
 					
-	
-		
 	<nav class="ui top secondary menu bar">
 	
 	<div class="item">
@@ -371,14 +377,14 @@ var bodyBgSwitchIndex = 0;
 
 	
 	
-		<div class="item">
-			<a href="/posts">
-				<i class="inverted big link archive icon" title="Archive"></i>
-			</a>
-		</div>
-	
 
 	
+	
+		<div class="item">
+			<a href="/tags">
+				<i class="inverted big link tags icon" title="All Tags"></i>
+			</a>
+		</div>
 	
 
 	
@@ -395,6 +401,12 @@ var bodyBgSwitchIndex = 0;
 
 	
 	
+		<div class="ui container tablet computer only grid">
+			<div class="item" onClick="$('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');">
+				<i class="inverted big link sidebar icon" title="Show Sidebar"></i>
+			</div>
+		</div>
+	
 
 	
 	
@@ -406,10 +418,11 @@ var bodyBgSwitchIndex = 0;
 	
 </nav>
 
-	
+
 	<div class="ui centered grid">
-		<div class="fifteen wide mobile fifteen wide tablet four wide computer column">
-			<div class="ui inverted accordion">
+		
+		<div class="sixteen wide mobile only column">
+				<div class="ui inverted accordion">
 	<div id="header" class="ui inverted segment column box">		
 		
 		<header id="author" class="ui top attached center aligned inverted segment">
@@ -429,16 +442,16 @@ var bodyBgSwitchIndex = 0;
 		</header>
 
 		
-		<div class="active title header-title">
+		<div class=" title header-title">
 			
 				<div id="tag-category-pop" class="ui red right corner label">
-					<i class="hand point icon up" title="Show/hide tags and categories"></i>
+					<i class="hand point icon down" title="Show/hide tags and categories"></i>
 				</div>
 			
 		</div>
 		
 		
-		<div id="tag-category" class="active content">
+		<div id="tag-category" class=" content">
 			
 				<section class="ui attached center aligned inverted segment dream-tags none flexbox">
 					
@@ -452,22 +465,22 @@ var bodyBgSwitchIndex = 0;
 	
 		
 			
-			<a class="ui label blue " href="/tags/aws" title="aws">aws</a>
+			<a class="ui label red " href="/tags/aws" title="aws">aws</a>
 		
 			
-			<a class="ui label teal " href="/tags/cicd" title="cicd">cicd</a>
+			<a class="ui label orange " href="/tags/cicd" title="cicd">cicd</a>
 		
 			
-			<a class="ui label blue " href="/tags/codebuild" title="codebuild">codebuild</a>
+			<a class="ui label pink " href="/tags/codebuild" title="codebuild">codebuild</a>
 		
 			
-			<a class="ui label brown " href="/tags/iac" title="iac">iac</a>
+			<a class="ui label red " href="/tags/iac" title="iac">iac</a>
 		
 			
-			<a class="ui label yellow " href="/tags/monitor" title="monitor">monitor</a>
+			<a class="ui label pink " href="/tags/monitor" title="monitor">monitor</a>
 		
 			
-			<a class="ui label orange " href="/tags/terraform" title="terraform">terraform</a>
+			<a class="ui label purple " href="/tags/terraform" title="terraform">terraform</a>
 		
 			
 			<a class="ui label violet " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
@@ -626,47 +639,130 @@ var bodyBgSwitchIndex = 0;
 </div>
 
 		</div>
-		
-		<div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list">
-			<div class="cards row box">
+
+		<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
+			
+			<section class="ui secondary top attached black segment post-head">
+				<h1 class="post-title">
+					Monitor系統建置
+				</h1>
+
+				<div class="sub header">
+					<div><span><i class="calendar outline icon"></i>May 12, 2019</span></div>
+					
+					<div><span class="disqusComment"><i class="comment outline icon"></i><a href="https://zealot0515.github.io/posts/monitor%E7%B3%BB%E7%B5%B1%E5%BB%BA%E7%BD%AE/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="0fbe2202eac8259c8dabc8761c1c77ae"></a></span></div>
+					<div><span><i class="clock outline icon"></i>1 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on May 12, 2019</span></div>
+				</div>
+				<hr>
+
+				
+
+				<article class="post-content twemoji">
+					<p>最近工作有接觸到建設monitor系統</p>
+
+<p>做了一些研究後, 其實現有的工具非常的多, 開源也有許多優秀的工具。</p>
+
+<p><a href="https://openapm.io/landscape" title="https://openapm.io/landscape">https://openapm.io/landscape</a></p>
+
+<p>這個網站就列出了許多服務, 有data source, 也有db, 也有分析用的前端。</p>
+
+<p>以目前我自己接觸的為例,</p>
+
+<p><img src="/uploads/螢幕快照 2019-05-13 下午10.21.08.png" alt="" /></p>
+
+<p>有一部分就是從prometheus的node exporter將機器數據導入prometheus DB裡,  再透過Grafana 去顯示圖表, 方便監控</p>
+
+<p>也有透過第三方, site24x7, new relic, cloud watch這些轉入prometheus, 再進行繪圖, 但這部分就是透過找尋方法/API, 自行寫指標工具的方式導入, 比較複雜。</p>
+
+<p>但簡單說, 就是 資料來源&gt;資料庫&gt;監控後台 這樣的行為</p>
+
+<p>要用哪些工具來組合, 就依照需求來串接。</p>
+
+				</article>				
+			</section>
+
+			
+			<section class="ui secondary attached segment dream-tags">
 				
 					
 
 
-	
-	
-		
-	
 
 
-
-<article class="blog-card none flexbox">
 	
-	<img class="image" src="/img/default6.jpg"></img>
-	<div class="title-content twemoji">
-		<h3><a class="title" href=https://zealot0515.github.io/posts/aws-deepracer-lab%E9%AB%94%E9%A9%97-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/>AWS DeepRacer Lab體驗 - 機器學習</a></h3>
-		<div class="intro twemoji">
-			
-				<br><br>
-			
-		</div>
-	</div>
-
+		<a class="ui label red " href="/tags/monitor" title="monitor">monitor</a>
 	
-	<div class="utility-info">
-		<ul class="utility-list">
-			
-				<div><i class="comment icon"></i><span class="disqus-comment-count" data-disqus-identifier="c0355ad0aaccb97ae9bc9f30e6d3232d"></span></div>
-			
-			<div><span><i class="calendar icon"></i>May 12, 2019</span></div>
-			<div><span><i class="clock icon"></i>1 min read</span></div>
-		</ul>
-	</div>
-	<div class="color-overlay"></div>
-</article>
+
 
 				
-			</div>
+			</section>
+
+			
+			
+				<section class="ui secondary  attached segment share row box">
+					
+
+
+
+
+
+
+
+
+<div class="author">
+	
+	<img class="avatar" src="/uploads/15740812_1539957876020597_216031373147234651_n.jpg">
+	
+</div>
+<div class="info grow flexbox">
+	
+	<p class="name">Pagi</p>
+	
+	<p class="desc">Kept Going...</p>
+</div>
+
+
+<section class="buttons row box">
+	<div class="facebook none flexbox" href="#" onclick="window.open(
+			'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+			'facebook-share-dialog',
+			'width=626,height=436'); return false;">
+		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
+	</div>
+	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;Monitor系統建置  https:\/\/zealot0515.github.io\/posts\/monitor%E7%B3%BB%E7%B5%B1%E5%BB%BA%E7%BD%AE\/','_self')">
+		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
+	</div>
+</section>
+
+				</section>
+			
+
+			
+			
+			
+
+			
+			
+				<div class="ui secondary bottom attached stacked segment disqus">
+					
+<div id="disqus_thread"></div>
+<script>
+	var disqus_config = function () {
+		this.page.url = 'https:\/\/zealot0515.github.io\/posts\/monitor%E7%B3%BB%E7%B5%B1%E5%BB%BA%E7%BD%AE\/';
+		this.page.identifier = '0fbe2202eac8259c8dabc8761c1c77ae';
+	};
+	(function() {
+   	var d = document, s = d.createElement('script');
+   	s.src = 'https://' + 'zealot0515' + '.disqus.com/embed.js';
+   	s.setAttribute('data-timestamp', +new Date());
+   	(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+				</div>
+			
 		</div>
 	</div>
 
@@ -785,9 +881,7 @@ var bodyBgSwitchIndex = 0;
 		
 	
 	
-		
-			<script id="dsq-count-scr" src="//zealot0515.disqus.com/count.js" async></script>
-		
+		<script id="dsq-count-scr" src="//zealot0515.disqus.com/count.js" async></script>
 	
 
 		

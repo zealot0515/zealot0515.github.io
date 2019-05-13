@@ -11,7 +11,7 @@
     
     
     <item>
-      <title>aws</title>
+      <title>AWS</title>
       <link>https://zealot0515.github.io/tags/aws/</link>
       <pubDate>Sun, 12 May 2019 16:00:00 +0000</pubDate>
       
@@ -25,6 +25,15 @@
       <pubDate>Sun, 12 May 2019 16:00:00 +0000</pubDate>
       
       <guid>https://zealot0515.github.io/tags/ml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>monitor</title>
+      <link>https://zealot0515.github.io/tags/monitor/</link>
+      <pubDate>Sun, 12 May 2019 16:00:00 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/tags/monitor/</guid>
       <description></description>
     </item>
     
@@ -61,15 +70,6 @@
       <pubDate>Mon, 06 May 2019 16:00:00 +0000</pubDate>
       
       <guid>https://zealot0515.github.io/tags/cloudwatch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>monitor</title>
-      <link>https://zealot0515.github.io/tags/monitor/</link>
-      <pubDate>Mon, 06 May 2019 16:00:00 +0000</pubDate>
-      
-      <guid>https://zealot0515.github.io/tags/monitor/</guid>
       <description></description>
     </item>
     

@@ -40,6 +40,23 @@ https://www.ithome.com.tw/news/130338</description>
     </item>
     
     <item>
+      <title>Monitor系統建置</title>
+      <link>https://zealot0515.github.io/posts/monitor%E7%B3%BB%E7%B5%B1%E5%BB%BA%E7%BD%AE/</link>
+      <pubDate>Sun, 12 May 2019 16:00:00 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/posts/monitor%E7%B3%BB%E7%B5%B1%E5%BB%BA%E7%BD%AE/</guid>
+      <description>最近工作有接觸到建設monitor系統
+做了一些研究後, 其實現有的工具非常的多, 開源也有許多優秀的工具。
+https://openapm.io/landscape
+這個網站就列出了許多服務, 有data source, 也有db, 也有分析用的前端。
+以目前我自己接觸的為例,
+有一部分就是從prometheus的node exporter將機器數據導入prometheus DB裡, 再透過Grafana 去顯示圖表, 方便監控
+也有透過第三方, site24x7, new relic, cloud watch這些轉入prometheus, 再進行繪圖, 但這部分就是透過找尋方法/API, 自行寫指標工具的方式導入, 比較複雜。
+但簡單說, 就是 資料來源&amp;gt;資料庫&amp;gt;監控後台 這樣的行為
+要用哪些工具來組合, 就依照需求來串接。</description>
+    </item>
+    
+    <item>
       <title>讓cpu假忙的小工具 stress</title>
       <link>https://zealot0515.github.io/posts/%E8%AE%93cpu%E5%81%87%E5%BF%99%E7%9A%84%E5%B0%8F%E5%B7%A5%E5%85%B7-stress/</link>
       <pubDate>Fri, 10 May 2019 07:00:00 +0000</pubDate>

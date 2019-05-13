@@ -3,6 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://zealot0515.github.io/tags/aws/</loc>
+    <lastmod>2019-05-12T16:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://zealot0515.github.io/posts/aws-deepracer-lab%E9%AB%94%E9%A9%97-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/</loc>
     <lastmod>2019-05-12T16:00:00+00:00</lastmod>
   </url>
@@ -11,6 +17,11 @@
     <loc>https://zealot0515.github.io/categories/</loc>
     <lastmod>2019-05-12T16:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zealot0515.github.io/posts/monitor%E7%B3%BB%E7%B5%B1%E5%BB%BA%E7%BD%AE/</loc>
+    <lastmod>2019-05-12T16:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -32,13 +43,19 @@
   </url>
   
   <url>
-    <loc>https://zealot0515.github.io/tags/aws/</loc>
+    <loc>https://zealot0515.github.io/tags/ml/</loc>
     <lastmod>2019-05-12T16:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zealot0515.github.io/tags/ml/</loc>
+    <loc>https://zealot0515.github.io/tags/monitor/</loc>
+    <lastmod>2019-05-12T16:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zealot0515.github.io/categories/%E4%BB%8B%E7%B4%B9/</loc>
     <lastmod>2019-05-12T16:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -90,18 +107,6 @@
   
   <url>
     <loc>https://zealot0515.github.io/tags/cloudwatch/</loc>
-    <lastmod>2019-05-06T16:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://zealot0515.github.io/tags/monitor/</loc>
-    <lastmod>2019-05-06T16:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://zealot0515.github.io/categories/%E4%BB%8B%E7%B4%B9/</loc>
     <lastmod>2019-05-06T16:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

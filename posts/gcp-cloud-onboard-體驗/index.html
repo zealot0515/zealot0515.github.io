@@ -2,7 +2,7 @@
 <html lang="">
 	<head>
 		<title>
-	Tag | Terraform
+	GCP Cloud OnBoard 體驗
 </title>
 		<style>
 	body {
@@ -26,8 +26,19 @@
 
 
 	
+	
+	
 	<meta name="author" content="Pagi" />
-	<meta name="description" content="" />
+	<meta name="description" content="今天參與了GCP的 Cloud OnBoard活動！
+感受上, 比起aws 提供的服務, gcp提供的更貼近程式開發者,
+不需開啟虛擬機, 就能使用cloud shell, 以及 cloud ide,
+在調用gcp的cli以及其他command line tools, 都非常的方便。
+在機器學習/大數據分析的部分, 也有可以線上編輯程式碼的介面,
+還能即時看到運作結果。（類似python notebook)
+還蠻推薦想要嘗試雲服務的人, 除了aws以外也可以試試看gcp哦
+gcp有提供永久免費的一台最小台的虛擬機, 詳細規格可以做點功課,
+印象只有流量部分需要小心, 還蠻適合拿來製作日常的爬蟲運作站。
+或者練習linux的練習環境。" />
 
 
 
@@ -37,8 +48,6 @@
 <link rel="shortcut icon" href="/img/defaultFav.ico">
 
 
-
-    <link rel="alternate" type="application/rss+xml" href="https://zealot0515.github.io/tags/terraform/index.xml" title="Pagi's Blog" />
 
 
 		
@@ -175,28 +184,28 @@ var bodyBgSwitchIndex = 0;
 	
 		
 			
-			<a class="ui label purple " href="/tags/aws" title="aws">aws</a>
+			<a class="ui label green " href="/tags/aws" title="aws">aws</a>
 		
 			
-			<a class="ui label pink " href="/tags/cicd" title="cicd">cicd</a>
+			<a class="ui label violet " href="/tags/cicd" title="cicd">cicd</a>
 		
 			
-			<a class="ui label blue " href="/tags/codebuild" title="codebuild">codebuild</a>
+			<a class="ui label teal " href="/tags/codebuild" title="codebuild">codebuild</a>
 		
 			
-			<a class="ui label yellow " href="/tags/iac" title="iac">iac</a>
+			<a class="ui label brown " href="/tags/iac" title="iac">iac</a>
 		
 			
-			<a class="ui label red " href="/tags/monitor" title="monitor">monitor</a>
+			<a class="ui label yellow " href="/tags/monitor" title="monitor">monitor</a>
 		
 			
-			<a class="ui label orange " href="/tags/terraform" title="terraform">terraform</a>
+			<a class="ui label pink " href="/tags/terraform" title="terraform">terraform</a>
 		
 			
-			<a class="ui label orange " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
+			<a class="ui label yellow " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
 		
 			
-			<a class="ui label pink " href="/tags/gcp" title="gcp">gcp</a>
+			<a class="ui label yellow " href="/tags/gcp" title="gcp">gcp</a>
 		
 	
 
@@ -359,8 +368,6 @@ var bodyBgSwitchIndex = 0;
 			<div class="flipper">
 				<div class="front">
 					
-	
-		
 	<nav class="ui top secondary menu bar">
 	
 	<div class="item">
@@ -378,14 +385,14 @@ var bodyBgSwitchIndex = 0;
 
 	
 	
-		<div class="item">
-			<a href="/posts">
-				<i class="inverted big link archive icon" title="Archive"></i>
-			</a>
-		</div>
-	
 
 	
+	
+		<div class="item">
+			<a href="/tags">
+				<i class="inverted big link tags icon" title="All Tags"></i>
+			</a>
+		</div>
 	
 
 	
@@ -402,6 +409,12 @@ var bodyBgSwitchIndex = 0;
 
 	
 	
+		<div class="ui container tablet computer only grid">
+			<div class="item" onClick="$('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');">
+				<i class="inverted big link sidebar icon" title="Show Sidebar"></i>
+			</div>
+		</div>
+	
 
 	
 	
@@ -413,10 +426,11 @@ var bodyBgSwitchIndex = 0;
 	
 </nav>
 
-	
+
 	<div class="ui centered grid">
-		<div class="fifteen wide mobile fifteen wide tablet four wide computer column">
-			<div class="ui inverted accordion">
+		
+		<div class="sixteen wide mobile only column">
+				<div class="ui inverted accordion">
 	<div id="header" class="ui inverted segment column box">		
 		
 		<header id="author" class="ui top attached center aligned inverted segment">
@@ -436,16 +450,16 @@ var bodyBgSwitchIndex = 0;
 		</header>
 
 		
-		<div class="active title header-title">
+		<div class=" title header-title">
 			
 				<div id="tag-category-pop" class="ui red right corner label">
-					<i class="hand point icon up" title="Show/hide tags and categories"></i>
+					<i class="hand point icon down" title="Show/hide tags and categories"></i>
 				</div>
 			
 		</div>
 		
 		
-		<div id="tag-category" class="active content">
+		<div id="tag-category" class=" content">
 			
 				<section class="ui attached center aligned inverted segment dream-tags none flexbox">
 					
@@ -459,28 +473,28 @@ var bodyBgSwitchIndex = 0;
 	
 		
 			
-			<a class="ui label olive " href="/tags/aws" title="aws">aws</a>
+			<a class="ui label yellow " href="/tags/aws" title="aws">aws</a>
 		
 			
-			<a class="ui label orange " href="/tags/cicd" title="cicd">cicd</a>
+			<a class="ui label blue " href="/tags/cicd" title="cicd">cicd</a>
 		
 			
-			<a class="ui label red " href="/tags/codebuild" title="codebuild">codebuild</a>
+			<a class="ui label orange " href="/tags/codebuild" title="codebuild">codebuild</a>
 		
 			
-			<a class="ui label yellow " href="/tags/iac" title="iac">iac</a>
+			<a class="ui label pink " href="/tags/iac" title="iac">iac</a>
 		
 			
-			<a class="ui label red " href="/tags/monitor" title="monitor">monitor</a>
+			<a class="ui label orange " href="/tags/monitor" title="monitor">monitor</a>
 		
 			
-			<a class="ui label pink " href="/tags/terraform" title="terraform">terraform</a>
+			<a class="ui label orange " href="/tags/terraform" title="terraform">terraform</a>
 		
 			
-			<a class="ui label teal " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
+			<a class="ui label purple " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
 		
 			
-			<a class="ui label brown " href="/tags/gcp" title="gcp">gcp</a>
+			<a class="ui label yellow " href="/tags/gcp" title="gcp">gcp</a>
 		
 	
 
@@ -640,83 +654,132 @@ var bodyBgSwitchIndex = 0;
 </div>
 
 		</div>
-		
-		<div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list">
-			<div class="cards row box">
+
+		<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
+			
+			<section class="ui secondary top attached black segment post-head">
+				<h1 class="post-title">
+					GCP Cloud OnBoard 體驗
+				</h1>
+
+				<div class="sub header">
+					<div><span><i class="calendar outline icon"></i>May 13, 2019</span></div>
+					
+					<div><span class="disqusComment"><i class="comment outline icon"></i><a href="https://zealot0515.github.io/posts/gcp-cloud-onboard-%E9%AB%94%E9%A9%97/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="2fc64ffbb3bf134aa05aa719eecce943"></a></span></div>
+					<div><span><i class="clock outline icon"></i>1 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on May 13, 2019</span></div>
+				</div>
+				<hr>
+
+				
+
+				<article class="post-content twemoji">
+					<p>今天參與了GCP的 Cloud OnBoard活動！</p>
+
+<p><img src="/uploads/螢幕快照 2019-05-14 下午10.42.30.png" alt="" /></p>
+
+<p>感受上, 比起aws 提供的服務, gcp提供的更貼近程式開發者,</p>
+
+<p>不需開啟虛擬機, 就能使用cloud shell, 以及 cloud ide,</p>
+
+<p>在調用gcp的cli以及其他command line tools, 都非常的方便。</p>
+
+<p>在機器學習/大數據分析的部分, 也有可以線上編輯程式碼的介面,</p>
+
+<p>還能即時看到運作結果。（類似python notebook)</p>
+
+<p>還蠻推薦想要嘗試雲服務的人, 除了aws以外也可以試試看gcp哦</p>
+
+<p>gcp有提供永久免費的一台最小台的虛擬機, 詳細規格可以做點功課,</p>
+
+<p>印象只有流量部分需要小心, 還蠻適合拿來製作日常的爬蟲運作站。</p>
+
+<p>或者練習linux的練習環境。</p>
+
+				</article>				
+			</section>
+
+			
+			<section class="ui secondary attached segment dream-tags">
 				
 					
 
 
-	
-	
-		
-	
 
 
-
-<article class="blog-card none flexbox">
 	
-	<img class="image" src="/img/default5.jpg"></img>
-	<div class="title-content twemoji">
-		<h3><a class="title" href=https://zealot0515.github.io/posts/terraform-iac-tool/>Terraform IaC Tool </a></h3>
-		<div class="intro twemoji">
-			
-				<br><br>
-			
-		</div>
-	</div>
-
+		<a class="ui label pink " href="/tags/gcp" title="GCP">GCP</a>
 	
-	<div class="utility-info">
-		<ul class="utility-list">
-			
-				<div><i class="comment icon"></i><span class="disqus-comment-count" data-disqus-identifier="e816782388fe28955b44de4ed647bf8a"></span></div>
-			
-			<div><span><i class="calendar icon"></i>May 9, 2019</span></div>
-			<div><span><i class="clock icon"></i>1 min read</span></div>
-		</ul>
-	</div>
-	<div class="color-overlay"></div>
-</article>
+
 
 				
+			</section>
+
+			
+			
+				<section class="ui secondary  attached segment share row box">
 					
 
 
-	
-	
-		
-	
 
 
 
-<article class="blog-card none flexbox">
+
+
+
+<div class="author">
 	
-	<img class="image" src="/img/default5.jpg"></img>
-	<div class="title-content twemoji">
-		<h3><a class="title" href=https://zealot0515.github.io/posts/terraforming-%E7%94%A8terraform%E7%9A%84%E6%96%B9%E5%BC%8F%E5%88%97%E5%87%BAaws%E8%B3%87%E6%BA%90/>Terraforming, 用terraform的方式列出aws資源</a></h3>
-		<div class="intro twemoji">
-			
-				<br><br>
-			
-		</div>
+	<img class="avatar" src="/uploads/15740812_1539957876020597_216031373147234651_n.jpg">
+	
+</div>
+<div class="info grow flexbox">
+	
+	<p class="name">Pagi</p>
+	
+	<p class="desc">Kept Going...</p>
+</div>
+
+
+<section class="buttons row box">
+	<div class="facebook none flexbox" href="#" onclick="window.open(
+			'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+			'facebook-share-dialog',
+			'width=626,height=436'); return false;">
+		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
 	</div>
-
-	
-	<div class="utility-info">
-		<ul class="utility-list">
-			
-				<div><i class="comment icon"></i><span class="disqus-comment-count" data-disqus-identifier="ae049ae408509f9fd2a9e787eaaeb56c"></span></div>
-			
-			<div><span><i class="calendar icon"></i>May 8, 2019</span></div>
-			<div><span><i class="clock icon"></i>1 min read</span></div>
-		</ul>
+	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;GCP Cloud OnBoard 體驗  https:\/\/zealot0515.github.io\/posts\/gcp-cloud-onboard-%E9%AB%94%E9%A9%97\/','_self')">
+		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
 	</div>
-	<div class="color-overlay"></div>
-</article>
+</section>
 
-				
-			</div>
+				</section>
+			
+
+			
+			
+			
+
+			
+			
+				<div class="ui secondary bottom attached stacked segment disqus">
+					
+<div id="disqus_thread"></div>
+<script>
+	var disqus_config = function () {
+		this.page.url = 'https:\/\/zealot0515.github.io\/posts\/gcp-cloud-onboard-%E9%AB%94%E9%A9%97\/';
+		this.page.identifier = '2fc64ffbb3bf134aa05aa719eecce943';
+	};
+	(function() {
+   	var d = document, s = d.createElement('script');
+   	s.src = 'https://' + 'zealot0515' + '.disqus.com/embed.js';
+   	s.setAttribute('data-timestamp', +new Date());
+   	(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+				</div>
+			
 		</div>
 	</div>
 
@@ -835,9 +898,7 @@ var bodyBgSwitchIndex = 0;
 		
 	
 	
-		
-			<script id="dsq-count-scr" src="//zealot0515.disqus.com/count.js" async></script>
-		
+		<script id="dsq-count-scr" src="//zealot0515.disqus.com/count.js" async></script>
 	
 
 		

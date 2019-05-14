@@ -4,10 +4,28 @@
     <link>https://zealot0515.github.io/posts/</link>
     <description>Recent content in Posts on Pagi&#39;s Blog</description>
     <meta name="generator" content="Hugo 0.55.2" />
-    <lastBuildDate>Sun, 12 May 2019 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 May 2019 16:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zealot0515.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GCP Cloud OnBoard 體驗</title>
+      <link>https://zealot0515.github.io/posts/gcp-cloud-onboard-%E9%AB%94%E9%A9%97/</link>
+      <pubDate>Mon, 13 May 2019 16:00:00 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/posts/gcp-cloud-onboard-%E9%AB%94%E9%A9%97/</guid>
+      <description>今天參與了GCP的 Cloud OnBoard活動！
+感受上, 比起aws 提供的服務, gcp提供的更貼近程式開發者,
+不需開啟虛擬機, 就能使用cloud shell, 以及 cloud ide,
+在調用gcp的cli以及其他command line tools, 都非常的方便。
+在機器學習/大數據分析的部分, 也有可以線上編輯程式碼的介面,
+還能即時看到運作結果。（類似python notebook)
+還蠻推薦想要嘗試雲服務的人, 除了aws以外也可以試試看gcp哦
+gcp有提供永久免費的一台最小台的虛擬機, 詳細規格可以做點功課,
+印象只有流量部分需要小心, 還蠻適合拿來製作日常的爬蟲運作站。
+或者練習linux的練習環境。</description>
+    </item>
     
     <item>
       <title>AWS DeepRacer Lab體驗 - 機器學習</title>

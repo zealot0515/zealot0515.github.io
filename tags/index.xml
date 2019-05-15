@@ -5,10 +5,19 @@
     <link>https://zealot0515.github.io/tags/</link>
     <description>Recent content in Tags on Pagi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 13 May 2019 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 May 2019 16:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zealot0515.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CICD</title>
+      <link>https://zealot0515.github.io/tags/cicd/</link>
+      <pubDate>Tue, 14 May 2019 16:00:00 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/tags/cicd/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>GCP</title>
@@ -20,7 +29,7 @@
     </item>
     
     <item>
-      <title>AWS</title>
+      <title>aws</title>
       <link>https://zealot0515.github.io/tags/aws/</link>
       <pubDate>Sun, 12 May 2019 16:00:00 +0000</pubDate>
       
@@ -65,7 +74,7 @@
     </item>
     
     <item>
-      <title>Terraform</title>
+      <title>terraform</title>
       <link>https://zealot0515.github.io/tags/terraform/</link>
       <pubDate>Thu, 09 May 2019 13:00:00 +0000</pubDate>
       
@@ -106,15 +115,6 @@
       <pubDate>Wed, 03 Apr 2019 14:50:34 +0000</pubDate>
       
       <guid>https://zealot0515.github.io/tags/%E5%B7%A5%E5%85%B7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CICD</title>
-      <link>https://zealot0515.github.io/tags/cicd/</link>
-      <pubDate>Wed, 03 Apr 2019 14:11:36 +0000</pubDate>
-      
-      <guid>https://zealot0515.github.io/tags/cicd/</guid>
       <description></description>
     </item>
     

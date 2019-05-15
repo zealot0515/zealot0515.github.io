@@ -2,7 +2,7 @@
 <html lang="">
 	<head>
 		<title>
-	透過第三方monitor aws服務 - site24x7
+	2019雲端大會 - 趨勢CICD分享
 </title>
 		<style>
 	body {
@@ -29,8 +29,25 @@
 	
 	
 	<meta name="author" content="Pagi" />
-	<meta name="description" content="site24x7是一個paas的第三方監控服務, 透過授權第三方讀取cloudwatch資訊, 來monitor服務的狀況, 設定指標進行告警。
-不過這邊要注意, 是透過aws cloudwatch api查詢指標, 有額外的費用存在！" />
+	<meta name="description" content="今天第一次參加雲端拜拜大會, 好多廠商, 好多小贈品。
+期間參與了一場趨勢CICD的分享會, 覺得醍醐灌頂, 記錄一下．．．
+ 開發上傳
+ git推版發布 觸發circle ci 產生程式包, 上傳s3   測試站建立
+ git新增tag, 透過tag名稱傳遞資訊 觸發circle ci 取出檔案包版本名稱 產生cloud formation, 透過api通知aws建置環境
+ aws 透過cloud formation產生對應資源
+ iam rule
+ vpc infrastructure
+ elb
+ ec2 / userdata 讓機器啟動去s3取得程式包
+ ec2取得程式包啟動完成後回傳成功訊息給cloudformation   測試站移除
+ git新增tag, 透過tag名稱傳遞資訊
+ 觸發circle ci
+ 取出檔案包版本名稱
+ 產生cloud formation, 透過api通知aws移除環境
+ aws
+ 透過cloud formation移除對應環境
+  更版CICD流程
+ git推版發布" />
 
 
 
@@ -176,25 +193,25 @@ var bodyBgSwitchIndex = 0;
 	
 		
 			
-			<a class="ui label teal " href="/tags/aws" title="aws">aws</a>
+			<a class="ui label purple " href="/tags/aws" title="aws">aws</a>
 		
 			
-			<a class="ui label green " href="/tags/cicd" title="cicd">cicd</a>
+			<a class="ui label yellow " href="/tags/cicd" title="cicd">cicd</a>
 		
 			
-			<a class="ui label pink " href="/tags/codebuild" title="codebuild">codebuild</a>
+			<a class="ui label blue " href="/tags/codebuild" title="codebuild">codebuild</a>
 		
 			
-			<a class="ui label yellow " href="/tags/iac" title="iac">iac</a>
+			<a class="ui label pink " href="/tags/iac" title="iac">iac</a>
 		
 			
-			<a class="ui label pink " href="/tags/monitor" title="monitor">monitor</a>
+			<a class="ui label violet " href="/tags/monitor" title="monitor">monitor</a>
 		
 			
-			<a class="ui label orange " href="/tags/terraform" title="terraform">terraform</a>
+			<a class="ui label pink " href="/tags/terraform" title="terraform">terraform</a>
 		
 			
-			<a class="ui label violet " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
+			<a class="ui label purple " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
 		
 			
 			<a class="ui label red " href="/tags/gcp" title="gcp">gcp</a>
@@ -472,28 +489,28 @@ var bodyBgSwitchIndex = 0;
 	
 		
 			
-			<a class="ui label olive " href="/tags/aws" title="aws">aws</a>
+			<a class="ui label purple " href="/tags/aws" title="aws">aws</a>
 		
 			
-			<a class="ui label violet " href="/tags/cicd" title="cicd">cicd</a>
+			<a class="ui label yellow " href="/tags/cicd" title="cicd">cicd</a>
 		
 			
-			<a class="ui label violet " href="/tags/codebuild" title="codebuild">codebuild</a>
+			<a class="ui label brown " href="/tags/codebuild" title="codebuild">codebuild</a>
 		
 			
-			<a class="ui label purple " href="/tags/iac" title="iac">iac</a>
+			<a class="ui label pink " href="/tags/iac" title="iac">iac</a>
 		
 			
-			<a class="ui label green " href="/tags/monitor" title="monitor">monitor</a>
+			<a class="ui label red " href="/tags/monitor" title="monitor">monitor</a>
 		
 			
-			<a class="ui label green " href="/tags/terraform" title="terraform">terraform</a>
+			<a class="ui label blue " href="/tags/terraform" title="terraform">terraform</a>
 		
 			
-			<a class="ui label green " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
+			<a class="ui label red " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
 		
 			
-			<a class="ui label teal " href="/tags/gcp" title="gcp">gcp</a>
+			<a class="ui label orange " href="/tags/gcp" title="gcp">gcp</a>
 		
 	
 
@@ -665,26 +682,88 @@ var bodyBgSwitchIndex = 0;
 			
 			<section class="ui secondary top attached black segment post-head">
 				<h1 class="post-title">
-					透過第三方monitor aws服務 - site24x7
+					2019雲端大會 - 趨勢CICD分享
 				</h1>
 
 				<div class="sub header">
-					<div><span><i class="calendar outline icon"></i>May 6, 2019</span></div>
+					<div><span><i class="calendar outline icon"></i>May 14, 2019</span></div>
 					
-					<div><span class="disqusComment"><i class="comment outline icon"></i><a href="https://zealot0515.github.io/posts/%E9%80%8F%E9%81%8E%E7%AC%AC%E4%B8%89%E6%96%B9monitor-aws%E6%9C%8D%E5%8B%99-site24x7/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="c8dc589d447e0b742a19ae77bdf0cbc8"></a></span></div>
+					<div><span class="disqusComment"><i class="comment outline icon"></i><a href="https://zealot0515.github.io/posts/2019%E9%9B%B2%E7%AB%AF%E5%A4%A7%E6%9C%83-%E8%B6%A8%E5%8B%A2cicd%E5%88%86%E4%BA%AB/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="74e5d540f2f3b10a1e45430f14ef7485"></a></span></div>
 					<div><span><i class="clock outline icon"></i>1 min read</span></div>
-					<div><span><i class="angle double up icon"></i>Last updated on May 6, 2019</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on May 14, 2019</span></div>
 				</div>
 				<hr>
 
 				
 
 				<article class="post-content twemoji">
-					<p>site24x7是一個paas的第三方監控服務, 透過授權第三方讀取cloudwatch資訊, 來monitor服務的狀況, 設定指標進行告警。</p>
+					<p>今天第一次參加雲端拜拜大會, 好多廠商, 好多小贈品。</p>
 
-<p><img src="/uploads/site247.png" alt="" /></p>
+<p>期間參與了一場趨勢CICD的分享會, 覺得醍醐灌頂, 記錄一下．．．</p>
 
-<p>不過這邊要注意, 是透過aws cloudwatch api查詢指標, 有額外的費用存在！</p>
+<ul>
+<li><p>開發上傳</p>
+
+<ul>
+<li>git推版發布</li>
+<li>觸發circle ci</li>
+<li>產生程式包, 上傳s3
+<br /></li>
+</ul></li>
+
+<li><p>測試站建立</p>
+
+<ul>
+<li>git新增tag, 透過tag名稱傳遞資訊</li>
+<li>觸發circle ci</li>
+<li>取出檔案包版本名稱</li>
+<li>產生cloud formation, 透過api通知aws建置環境<br /></li>
+<li>aws</li>
+<li>透過cloud formation產生對應資源<br />
+
+<ul>
+<li>iam rule<br /></li>
+<li>vpc infrastructure<br /></li>
+<li>elb<br /></li>
+<li>ec2 / userdata 讓機器啟動去s3取得程式包<br /></li>
+<li>ec2取得程式包啟動完成後回傳成功訊息給cloudformation</li>
+</ul></li>
+</ul></li>
+
+<li><p>測試站移除</p>
+
+<ul>
+<li>git新增tag, 透過tag名稱傳遞資訊<br /></li>
+<li>觸發circle ci<br /></li>
+<li>取出檔案包版本名稱<br /></li>
+<li>產生cloud formation, 透過api通知aws移除環境<br /></li>
+<li>aws<br /></li>
+<li>透過cloud formation移除對應環境<br />
+<br /></li>
+</ul></li>
+
+<li><p>更版CICD流程</p>
+
+<ul>
+<li>git推版發布<br /></li>
+<li>觸發circle ci<br /></li>
+<li>取出檔案包版本名稱</li>
+<li>產生cloud formation, 透過api通知aws建置環境<br /></li>
+<li>aws<br /></li>
+<li>透過cloud formation產生產生資源<br />
+
+<ul>
+<li>iam rule<br /></li>
+<li>vpc infrastructure<br /></li>
+<li>elb<br /></li>
+<li>ec2 / userdata 讓機器啟動去s3取得程式包<br /></li>
+<li>ec2取得程式包啟動完成後回傳成功訊息給cloudformation<br />
+<br /></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>目前版更部分的印象不是很清楚, 回頭找找有沒有投影片, 再回來修改</p>
 
 				</article>				
 			</section>
@@ -698,9 +777,7 @@ var bodyBgSwitchIndex = 0;
 
 
 	
-		<a class="ui label orange " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
-	
-		<a class="ui label yellow " href="/tags/monitor" title="monitor">monitor</a>
+		<a class="ui label green " href="/tags/cicd" title="CICD">CICD</a>
 	
 
 
@@ -739,7 +816,7 @@ var bodyBgSwitchIndex = 0;
 			'width=626,height=436'); return false;">
 		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
 	</div>
-	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;透過第三方monitor aws服務 - site24x7  https:\/\/zealot0515.github.io\/posts\/%E9%80%8F%E9%81%8E%E7%AC%AC%E4%B8%89%E6%96%B9monitor-aws%E6%9C%8D%E5%8B%99-site24x7\/','_self')">
+	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;2019雲端大會 - 趨勢CICD分享  https:\/\/zealot0515.github.io\/posts\/2019%E9%9B%B2%E7%AB%AF%E5%A4%A7%E6%9C%83-%E8%B6%A8%E5%8B%A2cicd%E5%88%86%E4%BA%AB\/','_self')">
 		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
 	</div>
 </section>
@@ -758,8 +835,8 @@ var bodyBgSwitchIndex = 0;
 <div id="disqus_thread"></div>
 <script>
 	var disqus_config = function () {
-		this.page.url = 'https:\/\/zealot0515.github.io\/posts\/%E9%80%8F%E9%81%8E%E7%AC%AC%E4%B8%89%E6%96%B9monitor-aws%E6%9C%8D%E5%8B%99-site24x7\/';
-		this.page.identifier = 'c8dc589d447e0b742a19ae77bdf0cbc8';
+		this.page.url = 'https:\/\/zealot0515.github.io\/posts\/2019%E9%9B%B2%E7%AB%AF%E5%A4%A7%E6%9C%83-%E8%B6%A8%E5%8B%A2cicd%E5%88%86%E4%BA%AB\/';
+		this.page.identifier = '74e5d540f2f3b10a1e45430f14ef7485';
 	};
 	(function() {
    	var d = document, s = d.createElement('script');

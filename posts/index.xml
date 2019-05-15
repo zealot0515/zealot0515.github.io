@@ -4,10 +4,37 @@
     <link>https://zealot0515.github.io/posts/</link>
     <description>Recent content in Posts on Pagi&#39;s Blog</description>
     <meta name="generator" content="Hugo 0.55.2" />
-    <lastBuildDate>Mon, 13 May 2019 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 May 2019 16:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zealot0515.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2019雲端大會 - 趨勢CICD分享</title>
+      <link>https://zealot0515.github.io/posts/2019%E9%9B%B2%E7%AB%AF%E5%A4%A7%E6%9C%83-%E8%B6%A8%E5%8B%A2cicd%E5%88%86%E4%BA%AB/</link>
+      <pubDate>Tue, 14 May 2019 16:00:00 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/posts/2019%E9%9B%B2%E7%AB%AF%E5%A4%A7%E6%9C%83-%E8%B6%A8%E5%8B%A2cicd%E5%88%86%E4%BA%AB/</guid>
+      <description>今天第一次參加雲端拜拜大會, 好多廠商, 好多小贈品。
+期間參與了一場趨勢CICD的分享會, 覺得醍醐灌頂, 記錄一下．．．
+ 開發上傳
+ git推版發布 觸發circle ci 產生程式包, 上傳s3   測試站建立
+ git新增tag, 透過tag名稱傳遞資訊 觸發circle ci 取出檔案包版本名稱 產生cloud formation, 透過api通知aws建置環境
+ aws 透過cloud formation產生對應資源
+ iam rule
+ vpc infrastructure
+ elb
+ ec2 / userdata 讓機器啟動去s3取得程式包
+ ec2取得程式包啟動完成後回傳成功訊息給cloudformation   測試站移除
+ git新增tag, 透過tag名稱傳遞資訊
+ 觸發circle ci
+ 取出檔案包版本名稱
+ 產生cloud formation, 透過api通知aws移除環境
+ aws
+ 透過cloud formation移除對應環境
+  更版CICD流程
+ git推版發布</description>
+    </item>
     
     <item>
       <title>GCP Cloud OnBoard 體驗</title>

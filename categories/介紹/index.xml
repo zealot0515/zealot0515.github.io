@@ -19,22 +19,28 @@
       <description>今天第一次參加雲端拜拜大會, 好多廠商, 好多小贈品。
 期間參與了一場趨勢CICD的分享會, 覺得醍醐灌頂, 記錄一下．．．
  開發上傳
- git推版發布 觸發circle ci 產生程式包, 上傳s3   測試站建立
- git新增tag, 透過tag名稱傳遞資訊 觸發circle ci 取出檔案包版本名稱 產生cloud formation, 透過api通知aws建置環境
- aws 透過cloud formation產生對應資源
+ git推版發布
+ 觸發circle ci
+ 產生程式包, 上傳s3
+  測試站建立
+ git新增tag, 透過tag名稱傳遞資訊
+ 觸發circle ci
+ 取出檔案包版本名稱
+ 產生cloud formation, 透過api通知aws建置環境
+ aws
+ 透過cloud formation產生對應資源
  iam rule
  vpc infrastructure
  elb
  ec2 / userdata 讓機器啟動去s3取得程式包
- ec2取得程式包啟動完成後回傳成功訊息給cloudformation   測試站移除
+ ec2取得程式包啟動完成後回傳成功訊息給cloudformation
+   測試站移除
  git新增tag, 透過tag名稱傳遞資訊
  觸發circle ci
  取出檔案包版本名稱
  產生cloud formation, 透過api通知aws移除環境
  aws
- 透過cloud formation移除對應環境
-  更版CICD流程
- git推版發布</description>
+ 透過cloud formation移除對應環境</description>
     </item>
     
     <item>

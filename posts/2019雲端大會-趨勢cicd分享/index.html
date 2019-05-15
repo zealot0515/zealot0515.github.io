@@ -32,22 +32,28 @@
 	<meta name="description" content="今天第一次參加雲端拜拜大會, 好多廠商, 好多小贈品。
 期間參與了一場趨勢CICD的分享會, 覺得醍醐灌頂, 記錄一下．．．
  開發上傳
- git推版發布 觸發circle ci 產生程式包, 上傳s3   測試站建立
- git新增tag, 透過tag名稱傳遞資訊 觸發circle ci 取出檔案包版本名稱 產生cloud formation, 透過api通知aws建置環境
- aws 透過cloud formation產生對應資源
+ git推版發布
+ 觸發circle ci
+ 產生程式包, 上傳s3
+  測試站建立
+ git新增tag, 透過tag名稱傳遞資訊
+ 觸發circle ci
+ 取出檔案包版本名稱
+ 產生cloud formation, 透過api通知aws建置環境
+ aws
+ 透過cloud formation產生對應資源
  iam rule
  vpc infrastructure
  elb
  ec2 / userdata 讓機器啟動去s3取得程式包
- ec2取得程式包啟動完成後回傳成功訊息給cloudformation   測試站移除
+ ec2取得程式包啟動完成後回傳成功訊息給cloudformation
+   測試站移除
  git新增tag, 透過tag名稱傳遞資訊
  觸發circle ci
  取出檔案包版本名稱
  產生cloud formation, 透過api通知aws移除環境
  aws
- 透過cloud formation移除對應環境
-  更版CICD流程
- git推版發布" />
+ 透過cloud formation移除對應環境" />
 
 
 
@@ -193,28 +199,28 @@ var bodyBgSwitchIndex = 0;
 	
 		
 			
-			<a class="ui label purple " href="/tags/aws" title="aws">aws</a>
+			<a class="ui label violet " href="/tags/aws" title="aws">aws</a>
 		
 			
-			<a class="ui label yellow " href="/tags/cicd" title="cicd">cicd</a>
+			<a class="ui label green " href="/tags/cicd" title="cicd">cicd</a>
 		
 			
-			<a class="ui label blue " href="/tags/codebuild" title="codebuild">codebuild</a>
+			<a class="ui label brown " href="/tags/codebuild" title="codebuild">codebuild</a>
 		
 			
-			<a class="ui label pink " href="/tags/iac" title="iac">iac</a>
+			<a class="ui label red " href="/tags/iac" title="iac">iac</a>
 		
 			
-			<a class="ui label violet " href="/tags/monitor" title="monitor">monitor</a>
+			<a class="ui label green " href="/tags/monitor" title="monitor">monitor</a>
 		
 			
-			<a class="ui label pink " href="/tags/terraform" title="terraform">terraform</a>
+			<a class="ui label olive " href="/tags/terraform" title="terraform">terraform</a>
 		
 			
 			<a class="ui label purple " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
 		
 			
-			<a class="ui label red " href="/tags/gcp" title="gcp">gcp</a>
+			<a class="ui label yellow " href="/tags/gcp" title="gcp">gcp</a>
 		
 	
 
@@ -489,10 +495,10 @@ var bodyBgSwitchIndex = 0;
 	
 		
 			
-			<a class="ui label purple " href="/tags/aws" title="aws">aws</a>
+			<a class="ui label pink " href="/tags/aws" title="aws">aws</a>
 		
 			
-			<a class="ui label yellow " href="/tags/cicd" title="cicd">cicd</a>
+			<a class="ui label green " href="/tags/cicd" title="cicd">cicd</a>
 		
 			
 			<a class="ui label brown " href="/tags/codebuild" title="codebuild">codebuild</a>
@@ -501,16 +507,16 @@ var bodyBgSwitchIndex = 0;
 			<a class="ui label pink " href="/tags/iac" title="iac">iac</a>
 		
 			
-			<a class="ui label red " href="/tags/monitor" title="monitor">monitor</a>
+			<a class="ui label yellow " href="/tags/monitor" title="monitor">monitor</a>
 		
 			
-			<a class="ui label blue " href="/tags/terraform" title="terraform">terraform</a>
+			<a class="ui label pink " href="/tags/terraform" title="terraform">terraform</a>
 		
 			
-			<a class="ui label red " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
+			<a class="ui label teal " href="/tags/cloudwatch" title="cloudwatch">cloudwatch</a>
 		
 			
-			<a class="ui label orange " href="/tags/gcp" title="gcp">gcp</a>
+			<a class="ui label red " href="/tags/gcp" title="gcp">gcp</a>
 		
 	
 
@@ -705,20 +711,20 @@ var bodyBgSwitchIndex = 0;
 <li><p>開發上傳</p>
 
 <ul>
-<li>git推版發布</li>
-<li>觸發circle ci</li>
-<li>產生程式包, 上傳s3
+<li>git推版發布<br /></li>
+<li>觸發circle ci<br /></li>
+<li>產生程式包, 上傳s3<br />
 <br /></li>
 </ul></li>
 
 <li><p>測試站建立</p>
 
 <ul>
-<li>git新增tag, 透過tag名稱傳遞資訊</li>
-<li>觸發circle ci</li>
-<li>取出檔案包版本名稱</li>
+<li>git新增tag, 透過tag名稱傳遞資訊<br /></li>
+<li>觸發circle ci<br /></li>
+<li>取出檔案包版本名稱<br /></li>
 <li>產生cloud formation, 透過api通知aws建置環境<br /></li>
-<li>aws</li>
+<li>aws<br /></li>
 <li>透過cloud formation產生對應資源<br />
 
 <ul>
@@ -726,7 +732,8 @@ var bodyBgSwitchIndex = 0;
 <li>vpc infrastructure<br /></li>
 <li>elb<br /></li>
 <li>ec2 / userdata 讓機器啟動去s3取得程式包<br /></li>
-<li>ec2取得程式包啟動完成後回傳成功訊息給cloudformation</li>
+<li>ec2取得程式包啟動完成後回傳成功訊息給cloudformation<br />
+<br /></li>
 </ul></li>
 </ul></li>
 
@@ -747,7 +754,7 @@ var bodyBgSwitchIndex = 0;
 <ul>
 <li>git推版發布<br /></li>
 <li>觸發circle ci<br /></li>
-<li>取出檔案包版本名稱</li>
+<li>取出檔案包版本名稱<br /></li>
 <li>產生cloud formation, 透過api通知aws建置環境<br /></li>
 <li>aws<br /></li>
 <li>透過cloud formation產生產生資源<br />
@@ -758,6 +765,7 @@ var bodyBgSwitchIndex = 0;
 <li>elb<br /></li>
 <li>ec2 / userdata 讓機器啟動去s3取得程式包<br /></li>
 <li>ec2取得程式包啟動完成後回傳成功訊息給cloudformation<br />
+<br />
 <br /></li>
 </ul></li>
 </ul></li>
@@ -777,7 +785,7 @@ var bodyBgSwitchIndex = 0;
 
 
 	
-		<a class="ui label green " href="/tags/cicd" title="CICD">CICD</a>
+		<a class="ui label violet " href="/tags/cicd" title="CICD">CICD</a>
 	
 
 

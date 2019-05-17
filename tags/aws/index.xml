@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AWS on Pagi&#39;s Blog</title>
+    <title>aws on Pagi&#39;s Blog</title>
     <link>https://zealot0515.github.io/tags/aws/</link>
-    <description>Recent content in AWS on Pagi&#39;s Blog</description>
+    <description>Recent content in aws on Pagi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 12 May 2019 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2019 16:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zealot0515.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Terraform - aws 建立vpc/subnet</title>
+      <link>https://zealot0515.github.io/posts/terraform-aws-%E5%BB%BA%E7%AB%8Bvpc-subnet/</link>
+      <pubDate>Wed, 15 May 2019 16:00:00 +0000</pubDate>
+      
+      <guid>https://zealot0515.github.io/posts/terraform-aws-%E5%BB%BA%E7%AB%8Bvpc-subnet/</guid>
+      <description>使用terraform來建立vpc很方便, 可以透過調整參數的方式,
+來建立不同的vpc, 在快速佈建測試環境時候很好用。
+ variable &amp;quot;vpc_name&amp;quot; {} variable &amp;quot;subnet_tag&amp;quot; {} variable &amp;quot;role_arn&amp;quot; {} variable &amp;quot;vpc_cidr&amp;quot; {} variable &amp;quot;public_subnet1&amp;quot; {} variable &amp;quot;public_subnet2&amp;quot; {} variable &amp;quot;public_subnet3&amp;quot; {} variable &amp;quot;private_subnet1&amp;quot; {} variable &amp;quot;private_subnet2&amp;quot; {} variable &amp;quot;private_subnet3&amp;quot; {} variable &amp;quot;az_1&amp;quot; {} variable &amp;quot;az_2&amp;quot; {} variable &amp;quot;az_3&amp;quot; {} variable &amp;quot;region&amp;quot; {} provider &amp;quot;aws&amp;quot; { region = &amp;quot;${var.region}&amp;quot; } module &amp;quot;vpc&amp;quot; { source = &amp;quot;../../modules/aws-vpc/&amp;quot; name = &amp;quot;${var.vpc_name}&amp;quot; cidr = &amp;quot;${var.vpc_cidr}&amp;quot; azs = [&amp;quot;${var.az_1}&amp;quot;, &amp;quot;${var.az_2}&amp;quot;, &amp;quot;${var.</description>
+    </item>
     
     <item>
       <title>AWS DeepRacer Lab體驗 - 機器學習</title>
